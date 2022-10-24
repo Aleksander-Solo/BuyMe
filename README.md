@@ -1,7 +1,9 @@
 # BuyMe
 Aplikacja Internetowa do kupna i sprzedaży książek, filmów i gier.
 <br/>
-![diagramAplikacji(1)](https://user-images.githubusercontent.com/89195542/197584158-45035421-ef8d-4ebb-b85a-2be88a960da8.png)
+<p align="center">
+  ![diagramAplikacji(1)](https://user-images.githubusercontent.com/89195542/197584158-45035421-ef8d-4ebb-b85a-2be88a960da8.png)
+</p>
 
 
 
