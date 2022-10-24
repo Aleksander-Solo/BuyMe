@@ -1,10 +1,24 @@
 # BuyMe
-Aplikacja Internetowa do kupna i sprzedaży książek, filmów i gier.
-<br/>
-<p align="center">
-  <img width="600" height="200" src="[https://www.python.org/python-.png](https://user-images.githubusercontent.com/89195542/197585548-b7ae64ef-953c-4db6-8525-c7396b857b89.png)">
+<p>
+Aplikacja Internetowa do kupna książek, filmów i gier.
 </p>
 
+## Architektura
 
+  ![diagramAplikacji(1)](https://user-images.githubusercontent.com/89195542/197585931-b2c05544-7515-4fdd-8e37-af5e6ae2c328.png)
+
+## Backend
+
+Założenia:
+
+- Czysta architektura (Onion architecture)
+- Stronicowanie wyników
+- Cache'owanie niektórych danych (w celu poprawy wydajności)
+- Operacje na bazie danych (EFCore)
+- Autentykacja i autoryzacja za pomocą tokenu JWT
+- System logów (w celu wykrycia błędów)
+- Zgodnie z zasadami projektowania REST
+
+<br/>
 
 Szymon Ufam Tobie.![ae7b08bad1785465270988afbb161fe9500b7b38](https://user-images.githubusercontent.com/101556899/197513791-c332122e-42b3-423d-8f27-bdd7bf423782.jpg)
