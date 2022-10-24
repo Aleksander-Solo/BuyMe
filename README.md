@@ -2,7 +2,8 @@
 Aplikacja Internetowa do kupna i sprzedaży książek, filmów i gier.
 <br/>
 <p align="center">
-  ![diagramAplikacji(1)](https://user-images.githubusercontent.com/89195542/197585484-286ddddd-8668-4b49-98f0-1778918ee1d5.png)
+  ![diagramAplikacji(1)](https://user-images.githubusercontent.com/89195542/197585548-b7ae64ef-953c-4db6-8525-c7396b857b89.png)
+
 </p>
 
 
