@@ -2,6 +2,9 @@
 <p>
 Aplikacja Internetowa do kupna książek, filmów i gier.
 </p>
+## Architektura
+
+
 
 ## Architektura
 
@@ -18,6 +21,16 @@ Założenia:
 - Autentykacja i autoryzacja za pomocą tokenu JWT
 - System logów (w celu wykrycia błędów)
 - Zgodnie z zasadami projektowania REST
+
+## Frontend
+
+Założenia:
+
+- Przejrzysty i prosty w obsłudze interfejs
+- Responsywny
+- Wysyła zapytanie HTTP na server za pomocą Axiosa
+- Autentykacja za pomocą JWT
+- Obsługa koszyka
 
 <br/>
 
