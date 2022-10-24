@@ -1,6 +1,6 @@
 # BuyMe
 <p>
-Aplikacja Internetowa do kupna książek, filmów i gier.
+Aplikacja Internetowa do kupna, przeglądania i recenzjonowania książek, filmów i gier.
 </p>
 
 ## Architektura
