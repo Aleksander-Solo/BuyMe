@@ -2,9 +2,6 @@
 <p>
 Aplikacja Internetowa do kupna książek, filmów i gier.
 </p>
-## Architektura
-
-
 
 ## Architektura
 
