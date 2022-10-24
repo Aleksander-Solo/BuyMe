@@ -1,2 +1,2 @@
-# otOlx
-Aplikacja Internetowa do kupna i sprzedaży.
+# BuyMe
+Aplikacja Internetowa do kupna i sprzedaży książek, filmów i gier.
