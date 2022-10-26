@@ -30,8 +30,3 @@ Założenia:
 - Obsługa koszyka
 
 ![Untitled Workspace](https://user-images.githubusercontent.com/89195542/197602754-e0c4422d-fba6-433f-9dae-1b479ce288ff.png)
-
-
-<br/>
-
-Szymon Ufam Tobie.![ae7b08bad1785465270988afbb161fe9500b7b38](https://user-images.githubusercontent.com/101556899/197513791-c332122e-42b3-423d-8f27-bdd7bf423782.jpg)
