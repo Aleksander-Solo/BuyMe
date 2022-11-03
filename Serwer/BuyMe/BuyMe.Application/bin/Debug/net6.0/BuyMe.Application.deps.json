@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BuyMe.Application/1.0.0": {
+        "dependencies": {
+          "BuyMe.Domain": "1.0.0",
+          "BuyMe.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "BuyMe.Application.dll": {}
+        }
+      },
+      "BuyMe.Domain/1.0.0": {
+        "runtime": {
+          "BuyMe.Domain.dll": {}
+        }
+      },
+      "BuyMe.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuyMe.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BuyMe.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BuyMe.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuyMe.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuyMe.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
