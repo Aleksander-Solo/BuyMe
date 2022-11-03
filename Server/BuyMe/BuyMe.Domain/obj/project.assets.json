@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
+      "projectUniqueName": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
       "projectName": "BuyMe.Domain",
-      "projectPath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
+      "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
       "packagesPath": "C:\\Users\\Aleksander\\.nuget\\packages\\",
-      "outputPath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\obj\\",
+      "outputPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

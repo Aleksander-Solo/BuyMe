@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj": {}
+    "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj": {
+    "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
+        "projectUniqueName": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
         "projectName": "BuyMe.Domain",
-        "projectPath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
+        "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
         "packagesPath": "C:\\Users\\Aleksander\\.nuget\\packages\\",
-        "outputPath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\obj\\",
+        "outputPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj": {
+    "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj",
+        "projectUniqueName": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj",
         "projectName": "BuyMe.Infrastructure",
-        "projectPath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj",
+        "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Aleksander\\.nuget\\packages\\",
-        "outputPath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Infrastructure\\obj\\",
+        "outputPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj": {
-                "projectPath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj"
+              "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj": {
+                "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj"
               }
             }
           }

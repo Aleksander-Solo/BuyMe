@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zs0x87J8V46rWuE788QMEWkAx2Q3xMgSWvx7tE9PEw4hKdNbFKf5nDHOcdLMmqXOmrZClc37+rvHlMoBwCub+w==",
+  "dgSpecHash": "KSGKQjAknjeWXp/PLTRpzvjnFxxJZl14z7NBjF6G+VRBCoZ4dyKEMJFMX4m0Z1suVHsXCyF6eFBAWoTBXibHkQ==",
   "success": true,
-  "projectFilePath": "D:\\BuyMe\\BuyMe\\Serwer\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
+  "projectFilePath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
