@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "BuyMe.Domain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/BuyMe.Domain.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BuyMe.Domain.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BuyMe.Domain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
-      "path": "../BuyMe.Domain/BuyMe.Domain.csproj",
-      "msbuildProject": "../BuyMe.Domain/BuyMe.Domain.csproj"
+      "path": "../Client.Domain/Client.Domain.csproj",
+      "msbuildProject": "../Client.Domain/Client.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BuyMe.Domain >= 1.0.0"
+      "Client.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj",
-      "projectName": "BuyMe.Infrastructure",
-      "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Client\\Client\\Server\\Client\\Client.Infrastructure\\Client.Infrastructure.csproj",
+      "projectName": "Client.Infrastructure",
+      "projectPath": "D:\\Client\\Client\\Server\\Client\\Client.Infrastructure\\Client.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Aleksander\\.nuget\\packages\\",
-      "outputPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\obj\\",
+      "outputPath": "D:\\Client\\Client\\Server\\Client\\Client.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj": {
-              "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj"
+            "D:\\Client\\Client\\Server\\Client\\Client.Domain\\Client.Domain.csproj": {
+              "projectPath": "D:\\Client\\Client\\Server\\Client\\Client.Domain\\Client.Domain.csproj"
             }
           }
         }

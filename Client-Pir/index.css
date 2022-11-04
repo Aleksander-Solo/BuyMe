@@ -1,0 +1,251 @@
+html, body
+{
+	margin: 0;
+	overflow-x: hidden;
+	animation: transitionIn 0.5s;
+	font-family: 'Nunito', sans-serif;
+}
+
+#a-white
+{
+	text-decoration: none;
+	color: black;	
+}
+
+#a-black
+{
+	text-decoration: none;
+	color: white;
+}
+
+@media only screen and (min-width: 1024px)
+{
+	.menu-box
+	{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		transition: 0.5s;
+		background-color: black;
+	}
+	.menu-box #logo
+	{
+		color: white;
+	}
+	.menu-box-opacity
+	{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		transition: 0.5s;
+	}
+	.menu-box-opacity #search-bar,
+	.menu-box-opacity #categories-image,	
+	.menu-box-opacity #shopping
+	{
+		opacity: 0;
+	}
+	#logo
+	{
+		width: 150px;
+		height: 50px;
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s;
+	}
+	#search-bar
+	{
+		width: 400px;
+		height: 40px;
+		margin-left: 5px;
+		margin-right: 5px;
+		transition: 0.5s;
+	}
+	#search-form
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#search
+	{
+		width: 340px;
+		height: 40px;
+		border: none;
+		border-bottom: 1px solid white;
+		background: transparent;
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+		color: white;
+	}
+	#submit
+	{
+		margin-top: 3px;
+		margin-left: 5px;
+		width: 40px;
+		height: 40px;
+		border: 1px solid white;
+		background: none;
+		background-image: url(web-pictures/search.png);
+		background-size: cover;
+		background-position: center;
+		
+	}
+	#submit:hover
+	{
+		cursor: pointer;
+	}
+	#client-options
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#categories-image
+	{
+		width: 150px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+    	justify-content: space-around;
+		margin-left: 10px;
+		margin-right: 10px;
+		transition: 0.5s;
+	}
+	#book, #videos, #games
+	{
+		width: 35px;
+		height: 35px;
+	}
+	#book
+	{
+		background-image: url(web-pictures/books-white.png);
+		background-size: cover;
+		background-position: center;
+	}
+	#videos
+	{
+		background-image: url(web-pictures/video-white.png);
+		background-size: cover;
+		background-position: center;		
+	}
+	#games
+	{
+		background-image: url(web-pictures/game-white.png);
+		background-size: cover;
+		background-position: center;		
+	}
+	#shopping
+	{
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background-image: url(web-pictures/shopping.png);
+		background-size: cover;
+		background-position: center;
+		transition: 0.5s;		
+	}
+	#user
+	{
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background-image: url(user-images/user_unknow.png);
+		background-size: cover;
+		background-position: center;	
+	}
+	#main-photo
+	{
+		width: 100%;
+		height: 100vh;
+		background-image: url(web-pictures/main-background.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#footer
+	{
+		width: 100%;
+		height: 300px;
+		background-color: black;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	#logo-footer
+	{
+		width: 150px;
+		height: 50px;
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#client-options-footer
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#categories-image-footer
+	{
+		width: 400px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+    	justify-content: space-around;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#book-footer, #videos-footer, #games-footer, #contact-footer
+	{
+		width: 80px;
+		height: 80px;
+	}
+	#book-footer
+	{
+		background-image: url(web-pictures/books-white.png);
+		background-size: cover;
+		background-position: center;
+	}
+	#videos-footer
+	{
+		background-image: url(web-pictures/video-white.png);
+		background-size: cover;
+		background-position: center;		
+	}
+	#games-footer
+	{
+		background-image: url(web-pictures/game-white.png);
+		background-size: cover;
+		background-position: center;		
+	}
+	#contact-footer
+	{
+		background-image: url(web-pictures/contact.png);
+		background-size: cover;
+		background-position: center;	
+	}
+}
+
+@keyframes transitionIn{
+  from {
+    opacity: 0.3;
+  }
+   to{
+     opacity: 1;
+   }
+}

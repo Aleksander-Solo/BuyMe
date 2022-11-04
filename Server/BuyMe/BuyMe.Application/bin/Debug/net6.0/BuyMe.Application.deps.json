@@ -6,42 +6,42 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "BuyMe.Application/1.0.0": {
+      "Client.Application/1.0.0": {
         "dependencies": {
-          "BuyMe.Domain": "1.0.0",
-          "BuyMe.Infrastructure": "1.0.0"
+          "Client.Domain": "1.0.0",
+          "Client.Infrastructure": "1.0.0"
         },
         "runtime": {
-          "BuyMe.Application.dll": {}
+          "Client.Application.dll": {}
         }
       },
-      "BuyMe.Domain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "runtime": {
-          "BuyMe.Domain.dll": {}
+          "Client.Domain.dll": {}
         }
       },
-      "BuyMe.Infrastructure/1.0.0": {
+      "Client.Infrastructure/1.0.0": {
         "dependencies": {
-          "BuyMe.Domain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "runtime": {
-          "BuyMe.Infrastructure.dll": {}
+          "Client.Infrastructure.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BuyMe.Application/1.0.0": {
+    "Client.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "BuyMe.Domain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "BuyMe.Infrastructure/1.0.0": {
+    "Client.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

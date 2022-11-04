@@ -1,4 +1,4 @@
-﻿namespace BuyMe.Domain.Entities
+﻿namespace Client.Domain.Entities
 {
     public class AuditableEntity
     {

@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "pWtPtFCseX6GuUsPeRrw2MultPIrU0uaIRdsCkvRM33Rhyh80i5nlvsv/jqSVhUe9js8NWsJxvZpysNhDdCIqA==",
   "success": true,
-  "projectFilePath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Application\\BuyMe.Application.csproj",
+  "projectFilePath": "D:\\Client\\Client\\Server\\Client\\Client.Application\\Client.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

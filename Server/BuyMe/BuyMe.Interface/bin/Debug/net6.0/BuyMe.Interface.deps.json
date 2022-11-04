@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "BuyMe.Interface/1.0.0": {
+      "Client.Interface/1.0.0": {
         "dependencies": {
-          "BuyMe.Application": "1.0.0",
-          "BuyMe.Domain": "1.0.0",
-          "BuyMe.Infrastructure": "1.0.0",
+          "Client.Application": "1.0.0",
+          "Client.Domain": "1.0.0",
+          "Client.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
-          "BuyMe.Interface.dll": {}
+          "Client.Interface.dll": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
@@ -64,32 +64,32 @@
           }
         }
       },
-      "BuyMe.Application/1.0.0": {
+      "Client.Application/1.0.0": {
         "dependencies": {
-          "BuyMe.Domain": "1.0.0",
-          "BuyMe.Infrastructure": "1.0.0"
+          "Client.Domain": "1.0.0",
+          "Client.Infrastructure": "1.0.0"
         },
         "runtime": {
-          "BuyMe.Application.dll": {}
+          "Client.Application.dll": {}
         }
       },
-      "BuyMe.Domain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "runtime": {
-          "BuyMe.Domain.dll": {}
+          "Client.Domain.dll": {}
         }
       },
-      "BuyMe.Infrastructure/1.0.0": {
+      "Client.Infrastructure/1.0.0": {
         "dependencies": {
-          "BuyMe.Domain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "runtime": {
-          "BuyMe.Infrastructure.dll": {}
+          "Client.Infrastructure.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BuyMe.Interface/1.0.0": {
+    "Client.Interface/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -136,17 +136,17 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.2.3",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
     },
-    "BuyMe.Application/1.0.0": {
+    "Client.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "BuyMe.Domain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "BuyMe.Infrastructure/1.0.0": {
+    "Client.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

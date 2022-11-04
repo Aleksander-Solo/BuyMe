@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+	<head>
+		<title>BuyMe - Witamy!</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="index.css" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	</head>
+	<body>
+		<nav class="menu-box-opacity">
+			<a id="a-white" href="/Client/"><div id="logo">BuyMe</div></a>
+			<div id="client-options">
+				<div id="search-bar">
+					<form id="search-form">
+						<input id="search" type="text" placeholder="Wpisz wyszukiwany produkt"/>
+						<input id="submit" type="submit" value="" />
+					</form>
+				</div>
+				<div id="categories-image">
+					<a href="#"><div id="book"></div></a>
+					<a href="#"><div id="games"></div></a>
+					<a href="#"><div id="videos"></div></a>
+				</div>
+				<a href="#"><div id="shopping"></div></a>
+				<a href="#"><div id="user"></div></a>
+			</div>
+		</nav>
+		<section id="main-photo"></section>
+		<section style="height: 600px;"></section>
+		<footer id="footer">
+			<a id="a-black" href="/Client/"><div id="logo-footer">BuyMe</div></a>
+			<div id="categories-image-footer">
+				<a href="#"><div id="book-footer"></div></a>
+				<a href="#"><div id="games-footer"></div></a>
+				<a href="#"><div id="videos-footer"></div></a>
+				<a href="#"><div id="contact-footer"></div></a>
+			</div>
+		</footer>
+	</body>
+</html>
+<script type="text/javascript">
+    $(window).on("scroll", function() {
+        if ($(window).scrollTop())
+		{
+            $('nav').removeClass('menu-box-opacity');
+            $('nav').addClass('menu-box');
+        }
+		else
+		{
+            $('nav').removeClass('menu-box');
+            $('nav').addClass('menu-box-opacity');
+        }
+    })
+</script>

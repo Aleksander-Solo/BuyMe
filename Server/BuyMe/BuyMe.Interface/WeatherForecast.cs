@@ -1,4 +1,4 @@
-namespace BuyMe.Interface
+namespace Client.Interface
 {
     public class WeatherForecast
     {

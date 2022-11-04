@@ -1,8 +1,8 @@
 {
   "Version": 1,
   "Hash": "lSBWvcEavJIHH8E7jDZBbuuRP0JN2g7LmVr9MxCXcZ4=",
-  "Source": "BuyMe.Interface",
-  "BasePath": "_content/BuyMe.Interface",
+  "Source": "Client.Interface",
+  "BasePath": "_content/Client.Interface",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

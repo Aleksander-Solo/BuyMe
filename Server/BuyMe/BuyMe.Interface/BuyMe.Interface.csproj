@@ -11,9 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BuyMe.Application\BuyMe.Application.csproj" />
-    <ProjectReference Include="..\BuyMe.Domain\BuyMe.Domain.csproj" />
-    <ProjectReference Include="..\BuyMe.Infrastructure\BuyMe.Infrastructure.csproj" />
+    <ProjectReference Include="..\Client.Application\Client.Application.csproj" />
+    <ProjectReference Include="..\Client.Domain\Client.Domain.csproj" />
+    <ProjectReference Include="..\Client.Infrastructure\Client.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

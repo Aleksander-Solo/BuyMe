@@ -1,4 +1,4 @@
-# BuyMe
+# Client
 <p>
 Aplikacja Internetowa do kupna, przeglądania i recenzjonowania książek, filmów i gier.
 </p>

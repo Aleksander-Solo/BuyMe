@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace BuyMe.Interface.Controllers
+namespace Client.Interface.Controllers
 {
     [ApiController]
     [Route("[controller]")]

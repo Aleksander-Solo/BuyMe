@@ -6,28 +6,28 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "BuyMe.Infrastructure/1.0.0": {
+      "Client.Infrastructure/1.0.0": {
         "dependencies": {
-          "BuyMe.Domain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "runtime": {
-          "BuyMe.Infrastructure.dll": {}
+          "Client.Infrastructure.dll": {}
         }
       },
-      "BuyMe.Domain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "runtime": {
-          "BuyMe.Domain.dll": {}
+          "Client.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BuyMe.Infrastructure/1.0.0": {
+    "Client.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "BuyMe.Domain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

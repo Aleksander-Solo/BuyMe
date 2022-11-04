@@ -73,41 +73,41 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "BuyMe.Application/1.0.0": {
+      "Client.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BuyMe.Domain": "1.0.0",
-          "BuyMe.Infrastructure": "1.0.0"
+          "Client.Domain": "1.0.0",
+          "Client.Infrastructure": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/BuyMe.Application.dll": {}
+          "bin/placeholder/Client.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BuyMe.Application.dll": {}
+          "bin/placeholder/Client.Application.dll": {}
         }
       },
-      "BuyMe.Domain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/BuyMe.Domain.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BuyMe.Domain.dll": {}
+          "bin/placeholder/Client.Domain.dll": {}
         }
       },
-      "BuyMe.Infrastructure/1.0.0": {
+      "Client.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "BuyMe.Domain": "1.0.0"
+          "Client.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/BuyMe.Infrastructure.dll": {}
+          "bin/placeholder/Client.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BuyMe.Infrastructure.dll": {}
+          "bin/placeholder/Client.Infrastructure.dll": {}
         }
       }
     }
@@ -238,27 +238,27 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
-    "BuyMe.Application/1.0.0": {
+    "Client.Application/1.0.0": {
       "type": "project",
-      "path": "../BuyMe.Application/BuyMe.Application.csproj",
-      "msbuildProject": "../BuyMe.Application/BuyMe.Application.csproj"
+      "path": "../Client.Application/Client.Application.csproj",
+      "msbuildProject": "../Client.Application/Client.Application.csproj"
     },
-    "BuyMe.Domain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
-      "path": "../BuyMe.Domain/BuyMe.Domain.csproj",
-      "msbuildProject": "../BuyMe.Domain/BuyMe.Domain.csproj"
+      "path": "../Client.Domain/Client.Domain.csproj",
+      "msbuildProject": "../Client.Domain/Client.Domain.csproj"
     },
-    "BuyMe.Infrastructure/1.0.0": {
+    "Client.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../BuyMe.Infrastructure/BuyMe.Infrastructure.csproj",
-      "msbuildProject": "../BuyMe.Infrastructure/BuyMe.Infrastructure.csproj"
+      "path": "../Client.Infrastructure/Client.Infrastructure.csproj",
+      "msbuildProject": "../Client.Infrastructure/Client.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BuyMe.Application >= 1.0.0",
-      "BuyMe.Domain >= 1.0.0",
-      "BuyMe.Infrastructure >= 1.0.0",
+      "Client.Application >= 1.0.0",
+      "Client.Domain >= 1.0.0",
+      "Client.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -269,11 +269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Interface\\BuyMe.Interface.csproj",
-      "projectName": "BuyMe.Interface",
-      "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Interface\\BuyMe.Interface.csproj",
+      "projectUniqueName": "D:\\Client\\Client\\Server\\Client\\Client.Interface\\Client.Interface.csproj",
+      "projectName": "Client.Interface",
+      "projectPath": "D:\\Client\\Client\\Server\\Client\\Client.Interface\\Client.Interface.csproj",
       "packagesPath": "C:\\Users\\Aleksander\\.nuget\\packages\\",
-      "outputPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Interface\\obj\\",
+      "outputPath": "D:\\Client\\Client\\Server\\Client\\Client.Interface\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -294,14 +294,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Application\\BuyMe.Application.csproj": {
-              "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Application\\BuyMe.Application.csproj"
+            "D:\\Client\\Client\\Server\\Client\\Client.Application\\Client.Application.csproj": {
+              "projectPath": "D:\\Client\\Client\\Server\\Client\\Client.Application\\Client.Application.csproj"
             },
-            "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj": {
-              "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Domain\\BuyMe.Domain.csproj"
+            "D:\\Client\\Client\\Server\\Client\\Client.Domain\\Client.Domain.csproj": {
+              "projectPath": "D:\\Client\\Client\\Server\\Client\\Client.Domain\\Client.Domain.csproj"
             },
-            "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj": {
-              "projectPath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Infrastructure\\BuyMe.Infrastructure.csproj"
+            "D:\\Client\\Client\\Server\\Client\\Client.Infrastructure\\Client.Infrastructure.csproj": {
+              "projectPath": "D:\\Client\\Client\\Server\\Client\\Client.Infrastructure\\Client.Infrastructure.csproj"
             }
           }
         }

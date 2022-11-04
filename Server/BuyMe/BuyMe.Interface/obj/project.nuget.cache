@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "7ky7qZC6AWEEa/mEFNVSGolVEgBFYcZFWBvFJ18e/BvZ9H7FLb5Y5kpYKv8BGtH0sQIqlK2YW+YBghP5ckcyBg==",
   "success": true,
-  "projectFilePath": "D:\\BuyMe\\BuyMe\\Server\\BuyMe\\BuyMe.Interface\\BuyMe.Interface.csproj",
+  "projectFilePath": "D:\\Client\\Client\\Server\\Client\\Client.Interface\\Client.Interface.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aleksander\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Aleksander\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

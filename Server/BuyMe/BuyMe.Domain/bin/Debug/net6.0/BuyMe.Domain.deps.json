@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "BuyMe.Domain/1.0.0": {
+      "Client.Domain/1.0.0": {
         "runtime": {
-          "BuyMe.Domain.dll": {}
+          "Client.Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BuyMe.Domain/1.0.0": {
+    "Client.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
