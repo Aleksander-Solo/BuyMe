@@ -6,10 +6,10 @@ body{
     background: url('images/main-background.jpg');
     height: 840px;
     width: 100%;
-    position: fixed;
+    position: relative;
     left: 0;
     right: 0;
+    top: 0;
     display: block;
     float: left;
-    margin-bottom: 200px;
 }
