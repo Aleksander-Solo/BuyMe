@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Test</title>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	
+</head>
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script type="module">
+	import axios from "axios"
+	export default{
+	
+		name: 'Home',
+		data(){
+			return {
+				data: [],
+			}
+		},
+		
+		methods:{
+			getItem(){
+				axios.get("").them((response) => {console.log(response);})
+			}
+		}
+	}
+	</script>
+</body>
+</html>
