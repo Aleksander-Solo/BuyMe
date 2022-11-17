@@ -1,0 +1,14 @@
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\bin\Debug\net6.0\BuyMe.Domain.deps.json
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\bin\Debug\net6.0\BuyMe.Domain.runtimeconfig.json
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\bin\Debug\net6.0\BuyMe.Domain.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\bin\Debug\net6.0\BuyMe.Domain.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.csproj.AssemblyReference.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.AssemblyInfoInputs.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.AssemblyInfo.cs
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.csproj.CoreCompileInputs.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\refint\BuyMe.Domain.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\BuyMe.Domain.genruntimeconfig.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Domain\obj\Debug\net6.0\ref\BuyMe.Domain.dll

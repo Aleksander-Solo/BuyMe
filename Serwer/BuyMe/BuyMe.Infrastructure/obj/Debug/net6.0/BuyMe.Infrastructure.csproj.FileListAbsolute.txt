@@ -1,0 +1,17 @@
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\bin\Debug\net6.0\BuyMe.Infrastructure.deps.json
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\bin\Debug\net6.0\BuyMe.Infrastructure.runtimeconfig.json
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\bin\Debug\net6.0\BuyMe.Infrastructure.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\bin\Debug\net6.0\BuyMe.Infrastructure.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\bin\Debug\net6.0\BuyMe.Domain.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\bin\Debug\net6.0\BuyMe.Domain.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.csproj.AssemblyReference.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.AssemblyInfoInputs.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.AssemblyInfo.cs
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.csproj.CoreCompileInputs.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.csproj.CopyComplete
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\refint\BuyMe.Infrastructure.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\BuyMe.Infrastructure.genruntimeconfig.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Infrastructure\obj\Debug\net6.0\ref\BuyMe.Infrastructure.dll
