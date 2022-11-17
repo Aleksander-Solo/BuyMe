@@ -3,10 +3,6 @@
 Aplikacja Internetowa do kupna, przeglądania i recenzjonowania książek, filmów i gier.
 </p>
 
-## Architektura
-
-  ![diagramAplikacji(1)](https://user-images.githubusercontent.com/89195542/197585931-b2c05544-7515-4fdd-8e37-af5e6ae2c328.png)
-
 ## Backend
 
 Założenia:
