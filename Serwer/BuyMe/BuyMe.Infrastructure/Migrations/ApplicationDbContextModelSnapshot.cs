@@ -70,7 +70,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("BookCategoryId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.BookCategory", b =>
@@ -90,7 +90,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BooksCategory");
+                    b.ToTable("BooksCategory", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.BookComment", b =>
@@ -127,7 +127,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("BooksComment");
+                    b.ToTable("BooksComment", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Category", b =>
@@ -147,7 +147,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Comment", b =>
@@ -184,7 +184,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Comments");
+                    b.ToTable("Comments", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Film", b =>
@@ -231,7 +231,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("FilmCategoryId");
 
-                    b.ToTable("Films");
+                    b.ToTable("Films", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.FilmCategory", b =>
@@ -251,7 +251,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FilmsCategory");
+                    b.ToTable("FilmsCategory", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.FilmComment", b =>
@@ -288,7 +288,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("FilmsComment");
+                    b.ToTable("FilmsComment", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Game", b =>
@@ -335,7 +335,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("GameCategoryId");
 
-                    b.ToTable("Games");
+                    b.ToTable("Games", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.GameCategory", b =>
@@ -355,7 +355,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GamesCategory");
+                    b.ToTable("GamesCategory", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.GameComment", b =>
@@ -392,7 +392,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("GamesComment");
+                    b.ToTable("GamesComment", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Product", b =>
@@ -428,7 +428,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Role", b =>
@@ -448,7 +448,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles");
+                    b.ToTable("Roles", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.User", b =>
@@ -489,7 +489,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Book", b =>

@@ -1,6 +1,4 @@
-﻿using BuyMe.Domain.Entities;
-
-namespace BuyMe.Domain.DTO
+﻿namespace BuyMe.Domain.DTO
 {
     public class BookDto
     {
@@ -12,7 +10,8 @@ namespace BuyMe.Domain.DTO
         public int NumOfPag { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
+        public int BookCategoryId { get; set; }
         public string BookCategory { get; set; }
-        public List<BookComment> BookComments { get; set; }
+        public List<BookCommentDto>? BookComments { get; set; }
     }
 }

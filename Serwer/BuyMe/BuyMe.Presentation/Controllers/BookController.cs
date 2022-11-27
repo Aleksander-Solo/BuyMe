@@ -21,28 +21,28 @@ namespace BuyMe.Presentation.Controllers
             return Ok(_bookService.GetBooks());
         }
 
-        [HttpGet("id")]
+        [HttpGet("{id:int}")]
         public IActionResult GetBook(int id)
         {
             return Ok(_bookService.GetBook(id));
         }
 
-        [HttpDelete("id")]
-        public IActionResult DeleteBook(int id)
+        [HttpDelete("{id:int}")]
+        public IActionResult Delete(int id)
         {
             _bookService.Delete(id);
             return NoContent();
         }
 
         [HttpPost]
-        public IActionResult AddBook([FromBody] BookDto book)
+        public IActionResult Add([FromBody] CreateBookDto book)
         {
             int id = _bookService.Create(book);
             return Created($"api/Book/{id}", _bookService.GetBook(id));
         }
 
-        [HttpPut("id")]
-        public IActionResult UpdateBook(int id, [FromBody] BookDto book)
+        [HttpPut("{id:int}")]
+        public IActionResult Update(int id, [FromBody] BookDto book)
         {
             _bookService.Update(id, book);
             return Ok();

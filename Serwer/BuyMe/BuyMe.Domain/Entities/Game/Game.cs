@@ -14,5 +14,6 @@ namespace BuyMe.Domain.Entities
         [ForeignKey("GameCategoryId")]
         public int GameCategoryId { get; set; }
         public GameCategory GameCategory { get; set; }
+        public List<GameComment> GameComments { get; set; }
     }
 }

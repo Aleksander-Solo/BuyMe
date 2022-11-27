@@ -15,5 +15,6 @@ namespace BuyMe.Domain.Entities
         public int FilmCategoryId { get; set; }
         public FilmCategory FilmCategory { get; set; }
         public List<FilmComment> FilmComments { get; set; }
+
     }
 }

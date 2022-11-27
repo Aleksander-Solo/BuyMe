@@ -1,4 +1,5 @@
 ﻿using BuyMe.Domain.DTO;
+using BuyMe.Domain.Entities;
 using BuyMe.Domain.Interfaces.Application;
 using BuyMe.Domain.Interfaces.Infrastructure;
 
@@ -6,16 +7,16 @@ namespace BuyMe.Application.Services
 {
     public class BookService : IBookService
     {
-        private readonly IBookRepositiore _repositiory;
+        private readonly IBookRepositiory _repositiory;
         private readonly MapperConfig _mapper;
 
-        public BookService(IBookRepositiore repositiory, MapperConfig mapper)
+        public BookService(IBookRepositiory repositiory, MapperConfig mapper)
         {
             _repositiory = repositiory;
             _mapper = mapper;
         }
 
-        public int Create(BookDto book)
+        public int Create(CreateBookDto book)
         {
             return _repositiory.Create(_mapper.Map(book));
         }
@@ -37,7 +38,9 @@ namespace BuyMe.Application.Services
 
         public void Update(int id, BookDto book)
         {
-            _repositiory.Update(id, _mapper.Map(book));
+            Book mappedBook = _mapper.Map(book);
+            mappedBook.Id = id;
+            _repositiory.Update(mappedBook);
         }
     }
 }

@@ -1,0 +1,17 @@
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\bin\Release\net6.0\BuyMe.Application.deps.json
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\bin\Release\net6.0\BuyMe.Application.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\bin\Release\net6.0\BuyMe.Application.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\bin\Release\net6.0\BuyMe.Domain.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\bin\Release\net6.0\BuyMe.Infrastructure.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\bin\Release\net6.0\BuyMe.Domain.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\bin\Release\net6.0\BuyMe.Infrastructure.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.csproj.AssemblyReference.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.AssemblyInfoInputs.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.AssemblyInfo.cs
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.csproj.CoreCompileInputs.cache
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.csproj.CopyComplete
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\refint\BuyMe.Application.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\BuyMe.Application.pdb
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Application\obj\Release\net6.0\ref\BuyMe.Application.dll
