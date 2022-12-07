@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="pl">
 	<head>
-		<title>BuyMe - Logowanie</title>
+		<title>BuyMe - Administracja</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="index.css" />
 		<meta name="viewport" content="width=device-width" />
@@ -29,13 +29,23 @@
 				<a href="/BuyMe/Logowanie/index.html"><div id="user"></div></a>
 			</div>
 		</nav>
-		<section id="log-bar">
-			<form action="/BuyMe/Administracja/index.html" id="log-box">
-				<div id="log-box-text">Zaloguj się</div>
-				<input type="text" id="log-box-input" placeholder="Wpisz login" />
-				<input type="password" id="log-box-input" placeholder="Wpisz hasło" />
-				<input type="submit" value="Zaloguj się" id="log-box-input-s" />
-				<div id="log-box-text-2">Nie posiadasz konta? <a href="../Rejestracja/index.html">Zajerestruj się.</a></div>
+		<section id="admin-panel">
+			<form action="#" method="post" id="formularz">
+				<a href="/BuyMe/Administracja/index.html">Wróć</a>
+				<label for="foto">Prześlij zdjęcie</label><input type="file" id="foto" />
+				<input type="text" placeholder="Tytuł" id="input-text" />
+				<input type="text" placeholder="Producent" id="input-text" />
+				<input type="date" id="input-text" />
+				<input type="text" placeholder="Nośnik" id="input-text" />
+				<input type="number" placeholder="Liczba stron" id="input-text" />
+				<textarea placeholder="Opis" id="input-text"></textarea>
+				<input type="number" placeholder="Cena" id="input-text" />
+				<select id="input-text">
+					<option>Kategoria 1</option>
+					<option>Kategoria 2</option>
+					<option>Kategoria 3</option>
+				</select>
+				<input type="submit" value="Dodaj produkt" id="submit-product" />
 			</form>
 		</section>
 		<footer id="footer">
