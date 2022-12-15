@@ -70,7 +70,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("BookCategoryId");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.BookCategory", b =>
@@ -90,7 +90,51 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BooksCategory", (string)null);
+                    b.ToTable("BooksCategory");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1503),
+                            Name = "Fantazy"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1538),
+                            Name = "Historyczny"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1540),
+                            Name = "Sci-fi"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1541),
+                            Name = "Thriller"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1543),
+                            Name = "Horror"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1544),
+                            Name = "Biografia i reportaż"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1545),
+                            Name = "Literatura dziecięca"
+                        });
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.BookComment", b =>
@@ -127,64 +171,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("BooksComment", (string)null);
-                });
-
-            modelBuilder.Entity("BuyMe.Domain.Entities.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Categories", (string)null);
-                });
-
-            modelBuilder.Entity("BuyMe.Domain.Entities.Comment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<byte>("Stars")
-                        .HasColumnType("tinyint");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Comments", (string)null);
+                    b.ToTable("BooksComment");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Film", b =>
@@ -231,7 +218,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("FilmCategoryId");
 
-                    b.ToTable("Films", (string)null);
+                    b.ToTable("Films");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.FilmCategory", b =>
@@ -251,7 +238,63 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FilmsCategory", (string)null);
+                    b.ToTable("FilmsCategory");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1679),
+                            Name = "Fantazy"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1681),
+                            Name = "Historyczny"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1682),
+                            Name = "Sci-fi"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1684),
+                            Name = "Thriller"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1685),
+                            Name = "Horror"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1686),
+                            Name = "Komedia"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1687),
+                            Name = "Kryminał"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1689),
+                            Name = "Muzyczny"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1690),
+                            Name = "Przygodowy"
+                        });
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.FilmComment", b =>
@@ -288,7 +331,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("FilmsComment", (string)null);
+                    b.ToTable("FilmsComment");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Game", b =>
@@ -335,7 +378,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("GameCategoryId");
 
-                    b.ToTable("Games", (string)null);
+                    b.ToTable("Games");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.GameCategory", b =>
@@ -355,7 +398,57 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GamesCategory", (string)null);
+                    b.ToTable("GamesCategory");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1656),
+                            Name = "Zręcznościowe"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1658),
+                            Name = "Przygodowe"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1659),
+                            Name = "Fabularne"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1661),
+                            Name = "Strategiczne"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1662),
+                            Name = "Symulacyjne"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1663),
+                            Name = "Sportowe"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1664),
+                            Name = "Edukacyjne"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreateDate = new DateTime(2022, 12, 13, 20, 9, 18, 533, DateTimeKind.Local).AddTicks(1666),
+                            Name = "Logiczne"
+                        });
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.GameComment", b =>
@@ -392,43 +485,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("GamesComment", (string)null);
-                });
-
-            modelBuilder.Entity("BuyMe.Domain.Entities.Product", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<byte[]>("Image")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("GamesComment");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Role", b =>
@@ -448,7 +505,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles", (string)null);
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.User", b =>
@@ -489,7 +546,7 @@ namespace BuyMe.Infrastructure.Migrations
 
                     b.HasIndex("RoleId");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Book", b =>
@@ -518,25 +575,6 @@ namespace BuyMe.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Book");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("BuyMe.Domain.Entities.Comment", b =>
-                {
-                    b.HasOne("BuyMe.Domain.Entities.Product", "Product")
-                        .WithMany("Comments")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BuyMe.Domain.Entities.User", "User")
-                        .WithMany("Comment")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
 
                     b.Navigation("User");
                 });
@@ -585,7 +623,7 @@ namespace BuyMe.Infrastructure.Migrations
             modelBuilder.Entity("BuyMe.Domain.Entities.GameComment", b =>
                 {
                     b.HasOne("BuyMe.Domain.Entities.Game", "Game")
-                        .WithMany()
+                        .WithMany("GameComments")
                         .HasForeignKey("GameId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -599,17 +637,6 @@ namespace BuyMe.Infrastructure.Migrations
                     b.Navigation("Game");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("BuyMe.Domain.Entities.Product", b =>
-                {
-                    b.HasOne("BuyMe.Domain.Entities.Category", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.User", b =>
@@ -633,11 +660,6 @@ namespace BuyMe.Infrastructure.Migrations
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("BuyMe.Domain.Entities.Category", b =>
-                {
-                    b.Navigation("Products");
-                });
-
             modelBuilder.Entity("BuyMe.Domain.Entities.Film", b =>
                 {
                     b.Navigation("FilmComments");
@@ -648,14 +670,14 @@ namespace BuyMe.Infrastructure.Migrations
                     b.Navigation("Films");
                 });
 
+            modelBuilder.Entity("BuyMe.Domain.Entities.Game", b =>
+                {
+                    b.Navigation("GameComments");
+                });
+
             modelBuilder.Entity("BuyMe.Domain.Entities.GameCategory", b =>
                 {
                     b.Navigation("Games");
-                });
-
-            modelBuilder.Entity("BuyMe.Domain.Entities.Product", b =>
-                {
-                    b.Navigation("Comments");
                 });
 
             modelBuilder.Entity("BuyMe.Domain.Entities.Role", b =>
@@ -666,8 +688,6 @@ namespace BuyMe.Infrastructure.Migrations
             modelBuilder.Entity("BuyMe.Domain.Entities.User", b =>
                 {
                     b.Navigation("BookComment");
-
-                    b.Navigation("Comment");
 
                     b.Navigation("FilmComment");
 

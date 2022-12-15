@@ -19,6 +19,13 @@ namespace BuyMe.Infrastructure.Repositiores
             return film.Id;
         }
 
+        public void CreateComment(FilmComment comment)
+        {
+            comment.CreateDate = DateTime.Now;
+            _context.FilmsComment.Add(comment);
+            _context.SaveChanges();
+        }
+
         public void Delete(int id)
         {
             Film? film = _context.Films.FirstOrDefault(x => x.Id == id);

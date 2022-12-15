@@ -21,6 +21,11 @@ namespace BuyMe.Application.Services
             return _repositiory.Create(_mapper.Map(book));
         }
 
+        public void CreateComment(BookCommentDto comment)
+        {
+            _repositiory.CreateComment(_mapper.Map(comment));
+        }
+
         public void Delete(int id)
         {
             _repositiory.Delete(id);
@@ -31,9 +36,11 @@ namespace BuyMe.Application.Services
             return _mapper.Map(_repositiory.GetBook(id));
         }
 
-        public List<BookDto> GetBooks()
+        public PagedResultDto<BookDto> GetBooks(int pageSize, int PageNumber)
         {
-            return _mapper.Map(_repositiory.GetBooks());
+            PagedResultDto<Book> books = _repositiory.GetBooks(pageSize, PageNumber);
+            PagedResultDto<BookDto> mappedBooks = new PagedResultDto<BookDto>(_mapper.Map(books.items), books.totalItemCount, pageSize);
+            return mappedBooks;
         }
 
         public void Update(int id, BookDto book)

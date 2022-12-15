@@ -1,0 +1,162 @@
+2022-12-08 23:20:48.9318 Info Message Template Auto Format enabled
+2022-12-08 23:20:48.9318 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-08 23:20:48.9761 Info Registered target FileTarget(Name=allfile)
+2022-12-08 23:20:48.9761 Info Registered target AsyncTargetWrapper(Name=AllAsyncWrapper)
+2022-12-08 23:20:48.9931 Info Validating config: TargetNames=AllAsyncWrapper, ConfigItems=39, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-08 23:20:48.9931 Info Configuration initialized.
+2022-12-08 23:20:49.0078 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-08 23:20:49.0078 Info Validating config: TargetNames=AllAsyncWrapper, ConfigItems=39, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-08 23:41:21.2164 Info Message Template Auto Format enabled
+2022-12-08 23:41:21.2164 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-08 23:41:21.2518 Info Registered target FileTarget(Name=error)
+2022-12-08 23:41:21.2666 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-08 23:41:21.2752 Info Configuration initialized.
+2022-12-08 23:41:21.2752 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-08 23:41:21.2752 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-08 23:48:49.5390 Info Message Template Auto Format enabled
+2022-12-08 23:48:49.5390 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-08 23:48:49.5742 Info Registered target FileTarget(Name=error)
+2022-12-08 23:48:49.5896 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-08 23:48:49.5896 Info Configuration initialized.
+2022-12-08 23:48:49.6017 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-08 23:48:49.6017 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-08 23:54:28.2285 Info Message Template Auto Format enabled
+2022-12-08 23:54:28.2285 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-08 23:54:28.2614 Info Registered target FileTarget(Name=error)
+2022-12-08 23:54:28.2756 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-08 23:54:28.2756 Info Configuration initialized.
+2022-12-08 23:54:28.2860 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-08 23:54:28.2860 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-09 00:00:35.0822 Info Message Template Auto Format enabled
+2022-12-09 00:00:35.0886 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-09 00:00:35.1179 Info Registered target FileTarget(Name=error)
+2022-12-09 00:00:35.1331 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-09 00:00:35.1331 Info Configuration initialized.
+2022-12-09 00:00:35.1458 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-09 00:00:35.1458 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:19:58.8323 Info Message Template Auto Format enabled
+2022-12-12 17:19:58.8323 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 17:19:58.8642 Info Registered target FileTarget(Name=error)
+2022-12-12 17:19:58.8770 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:19:58.8770 Info Configuration initialized.
+2022-12-12 17:19:58.8770 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 17:19:58.8770 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:25:30.4989 Info Message Template Auto Format enabled
+2022-12-12 17:25:30.5044 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 17:25:30.5309 Info Registered target FileTarget(Name=error)
+2022-12-12 17:25:30.5442 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:25:30.5522 Info Configuration initialized.
+2022-12-12 17:25:30.5522 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 17:25:30.5522 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:32:18.4234 Info Message Template Auto Format enabled
+2022-12-12 17:32:18.4295 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 17:32:18.4599 Info Registered target FileTarget(Name=error)
+2022-12-12 17:32:18.4755 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:32:18.4755 Info Configuration initialized.
+2022-12-12 17:32:18.4755 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 17:32:18.4755 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:40:59.1213 Info Message Template Auto Format enabled
+2022-12-12 17:40:59.1213 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 17:40:59.1563 Info Registered target FileTarget(Name=error)
+2022-12-12 17:40:59.1706 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:40:59.1706 Info Configuration initialized.
+2022-12-12 17:40:59.1828 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 17:40:59.1828 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:50:47.7008 Info Message Template Auto Format enabled
+2022-12-12 17:50:47.7072 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 17:50:47.7358 Info Registered target FileTarget(Name=error)
+2022-12-12 17:50:47.7511 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:50:47.7511 Info Configuration initialized.
+2022-12-12 17:50:47.7511 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 17:50:47.7511 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:57:03.8632 Info Message Template Auto Format enabled
+2022-12-12 17:57:03.8632 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 17:57:03.8946 Info Registered target FileTarget(Name=error)
+2022-12-12 17:57:03.9084 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:57:03.9084 Info Configuration initialized.
+2022-12-12 17:57:03.9084 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 17:57:03.9084 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:58:12.4559 Info Message Template Auto Format enabled
+2022-12-12 17:58:12.4610 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 17:58:12.4870 Info Registered target FileTarget(Name=error)
+2022-12-12 17:58:12.4999 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 17:58:12.5075 Info Configuration initialized.
+2022-12-12 17:58:12.5075 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 17:58:12.5075 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:32:25.5464 Info Message Template Auto Format enabled
+2022-12-12 18:32:25.5464 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 18:32:25.5772 Info Registered target FileTarget(Name=error)
+2022-12-12 18:32:25.5772 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:32:25.5971 Info Configuration initialized.
+2022-12-12 18:32:25.5971 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 18:32:25.5971 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:32:36.3299 Info Message Template Auto Format enabled
+2022-12-12 18:32:36.3299 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 18:32:36.3634 Info Registered target FileTarget(Name=error)
+2022-12-12 18:32:36.3777 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:32:36.3777 Info Configuration initialized.
+2022-12-12 18:32:36.3894 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 18:32:36.3894 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:34:08.5765 Info Message Template Auto Format enabled
+2022-12-12 18:34:08.5815 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 18:34:08.6066 Info Registered target FileTarget(Name=error)
+2022-12-12 18:34:08.6201 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:34:08.6281 Info Configuration initialized.
+2022-12-12 18:34:08.6281 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 18:34:08.6281 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:38:35.0465 Info Message Template Auto Format enabled
+2022-12-12 18:38:35.0516 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 18:38:35.0768 Info Registered target FileTarget(Name=error)
+2022-12-12 18:38:35.0901 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:38:35.0901 Info Configuration initialized.
+2022-12-12 18:38:35.1003 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 18:38:35.1003 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:38:48.4011 Info Message Template Auto Format enabled
+2022-12-12 18:38:48.4011 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 18:38:48.4319 Info Registered target FileTarget(Name=error)
+2022-12-12 18:38:48.4445 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:38:48.4445 Info Configuration initialized.
+2022-12-12 18:38:48.4445 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 18:38:48.4445 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:57:45.9033 Info Message Template Auto Format enabled
+2022-12-12 18:57:45.9033 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 18:57:45.9322 Info Registered target FileTarget(Name=error)
+2022-12-12 18:57:45.9322 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:57:45.9515 Info Configuration initialized.
+2022-12-12 18:57:45.9515 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 18:57:45.9515 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:58:22.2227 Info Message Template Auto Format enabled
+2022-12-12 18:58:22.2227 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 18:58:22.2537 Info Registered target FileTarget(Name=error)
+2022-12-12 18:58:22.2666 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 18:58:22.2666 Info Configuration initialized.
+2022-12-12 18:58:22.2766 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 18:58:22.2766 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 19:56:39.9197 Info Message Template Auto Format enabled
+2022-12-12 19:56:39.9197 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 19:56:39.9508 Info Registered target FileTarget(Name=error)
+2022-12-12 19:56:39.9647 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 19:56:39.9647 Info Configuration initialized.
+2022-12-12 19:56:39.9647 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 19:56:39.9647 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 20:20:04.5926 Info Message Template Auto Format enabled
+2022-12-12 20:20:04.5926 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 20:20:04.6264 Info Registered target FileTarget(Name=error)
+2022-12-12 20:20:04.6414 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 20:20:04.6414 Info Configuration initialized.
+2022-12-12 20:20:04.6414 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 20:20:04.6414 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 20:54:19.4723 Info Message Template Auto Format enabled
+2022-12-12 20:54:19.4723 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 20:54:19.5058 Info Registered target FileTarget(Name=error)
+2022-12-12 20:54:19.5202 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 20:54:19.5202 Info Configuration initialized.
+2022-12-12 20:54:19.5202 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 20:54:19.5202 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 20:56:24.6347 Info Message Template Auto Format enabled
+2022-12-12 20:56:24.6347 Info Loading assembly: NLog.Web.AspNetCore
+2022-12-12 20:56:24.6659 Info Registered target FileTarget(Name=error)
+2022-12-12 20:56:24.6790 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config
+2022-12-12 20:56:24.6790 Info Configuration initialized.
+2022-12-12 20:56:24.6790 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.1.0.1480. Product version: 5.1.0+5e6708d4d288e03b3ddf321838ec14907016f1b8. GlobalAssemblyCache: False
+2022-12-12 20:56:24.6899 Info Validating config: TargetNames=error, ConfigItems=14, FilePath=D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\NLog.config

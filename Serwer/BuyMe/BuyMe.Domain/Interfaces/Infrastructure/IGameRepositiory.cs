@@ -9,5 +9,6 @@ namespace BuyMe.Domain.Interfaces.Infrastructure
         public void Delete(int id);
         public void Update(Game game);
         public int Create(Game game);
+        public void CreateComment(GameComment comment);
     }
 }

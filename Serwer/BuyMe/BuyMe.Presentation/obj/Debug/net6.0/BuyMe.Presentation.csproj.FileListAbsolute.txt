@@ -92,3 +92,11 @@ D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\obj\Debug\net6.0\staticwebassets\
 D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.BuyMe.Presentation.props
 D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\obj\Debug\net6.0\staticwebassets.pack.json
 D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\AutoMapper.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\nlog.config
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\FluentValidation.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

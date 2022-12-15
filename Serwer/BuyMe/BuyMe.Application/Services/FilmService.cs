@@ -15,9 +15,14 @@ namespace BuyMe.Application.Services
             _mapper = mapper;
         }
 
-        public int Create(FilmDto film)
+        public int Create(CreateFilmDto film)
         {
             return _repository.Create(_mapper.Map(film));
+        }
+
+        public void CreateComment(FilmCommentDto comment)
+        {
+            _repository.CreateComment(_mapper.Map(comment));
         }
 
         public void Delete(int id)

@@ -18,6 +18,5 @@ namespace BuyMe.Domain.Entities
         public ICollection<BookComment> BookComment { get; set; }
         public ICollection<FilmComment> FilmComment { get; set; }
         public ICollection<GameComment> GameComment { get; set; }
-        public ICollection<Comment> Comment { get; set; }
     }
 }

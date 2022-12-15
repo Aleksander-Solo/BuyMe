@@ -1,4 +1,5 @@
-﻿using BuyMe.Infrastructure.Exceptions;
+﻿using BuyMe.Application.Exceptions;
+using BuyMe.Infrastructure.Exceptions;
 
 namespace BuyMe.Presentation.Middleware
 {
@@ -9,6 +10,11 @@ namespace BuyMe.Presentation.Middleware
             try
             {
                 await next.Invoke(context);
+            }
+            catch (BadRequestException badRequestException)
+            {
+                context.Response.StatusCode = 400;
+                await context.Response.WriteAsync(badRequestException.Message);
             }
             catch (NotFoundException notFoundException)
             {

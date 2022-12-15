@@ -16,9 +16,14 @@ namespace BuyMe.Application.Services
             _mapper = mapper;
         }
 
-        public int Create(GameDto game)
+        public int Create(CreateGameDto game)
         {
             return _repositiory.Create(_mapper.Map(game));
+        }
+
+        public void CreateComment(GameCommentDto comment)
+        {
+            _repositiory.CreateComment(_mapper.Map(comment));
         }
 
         public void Delete(int id)

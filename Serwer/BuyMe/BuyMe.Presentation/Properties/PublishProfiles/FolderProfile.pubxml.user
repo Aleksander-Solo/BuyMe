@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\BuyMe\BuyMe\Serwer\BuyMe\BuyMe.Presentation\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2022-12-14T22:49:03.9830375Z;True|2022-12-14T23:09:23.0909689+01:00;True|2022-12-14T15:24:27.0090908+01:00;True|2022-12-13T19:18:32.1867362+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="default">
+      <Value>UID=olopl_buyMeDB%3bPWD=abc123123%3bServer=sql.bsite.net\MSSQL2016%3bInitial Catalog=olopl_buyMeDB%3bTrustServerCertificate=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BuyMe.Infrastructure.ApplicationDbContext">
+      <Value>UID=olopl_buyMeDB%3bPWD=abc123123%3bServer=sql.bsite.net\MSSQL2016%3bInitial Catalog=olopl_buyMeDB%3bTrustServerCertificate=true%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -18,6 +18,13 @@ namespace BuyMe.Infrastructure.Repositiores
             return game.Id;
         }
 
+        public void CreateComment(GameComment comment)
+        {
+            comment.CreateDate = DateTime.Now;
+            _context.GamesComment.Add(comment);
+            _context.SaveChanges();
+        }
+
         public void Delete(int id)
         {
             Game game = _context.Games.FirstOrDefault(x => x.Id == id);
