@@ -233,25 +233,25 @@ html, body
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	#product-box
+	.product-box
 	{
 		width: 300px;
 		height: 400px;
 		margin: 20px;
 		transition: 0.5s;
 	}
-	#product-box:hover
+	.product-box:hover
 	{   
 		box-shadow: 0px 0px 48px 32px #fff6d4;
 		background-color: #fff6d4;
 		cursor: pointer;
 	}
-	#link-prod
+	.link-prod
 	{
 		color: black;
 		text-decoration: none;
 	}
-	#product-photo
+	.product-photo
 	{
 		width: 300px;
 		height: 300px;
@@ -259,12 +259,12 @@ html, body
 		justify-content: center;
 		align-items: center;
 	}
-	#product-photo-img
+	.product-photo-img
 	{
 		width: 60%;
 		height: auto;
 	}
-	#product-price
+	.product-price
 	{
 		width: 300px;
 		height: 100px;

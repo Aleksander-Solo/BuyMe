@@ -167,7 +167,7 @@ html, body
 		margin-top: 40px;
 		align-items: center;
 	}
-	#input-text
+	.input-text
 	{
 		width: 300px;
 		height: 22px;

@@ -8,7 +8,9 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<script src="kategorie.js"></script>
+		<script src="index.js"></script>
 	</head>
 	<body>
 		<nav class="menu-box">
@@ -87,55 +89,9 @@
 						</form>
 					</div>
 					<div id="main-product">
-						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>
-						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
-						</div></a>						<a href="/BuyMe/Produkty/Szczegoly/index.html" id="link-prod"><div id="product-box">
-							<div id="product-photo"><img src="1.jpg" id="product-photo-img" /></div>
-							<div id="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
+						<a href="/BuyMe/Produkty/Szczegoly/index.html" class="link-prod"><div class="product-box">
+							<div class="product-photo"><img src="1.jpg" class="product-photo-img" /></div>
+							<div class="product-price">Gwiezdne Wojny: Wojny Klonów(2005)<br/>355 zł</div>
 						</div></a>
 					</div>
 				</div>
