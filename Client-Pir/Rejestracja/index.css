@@ -173,7 +173,7 @@ html, body
 		font-size: 40px;
 		margin-bottom: 30px;
 	}
-	#log-box-input
+	.log-box-input
 	{
 		width: 300px;
 		height: 40px;
@@ -261,6 +261,12 @@ html, body
 		width: 200px;
 		margin-top: 10px;
 		font-size: 16px;
+	}
+	.error{
+		color: red;
+		font-size: 26px;
+		border: solid 3px red;
+		padding: 2px;
 	}
 }
 

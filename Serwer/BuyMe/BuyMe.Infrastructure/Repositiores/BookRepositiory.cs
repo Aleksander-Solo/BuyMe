@@ -49,13 +49,27 @@ namespace BuyMe.Infrastructure.Repositiores
             return book;
         }
 
-        public PagedResultDto<Book> GetBooks(int pageSize, int PageNumber)
+        public PagedResultDto<Book> GetBooks(int pageSize, int PageNumber, string category)
         {
-            var books = _context.Books.Include(x => x.BookCategory);
+            IQueryable<Book> books;
+            if (!String.IsNullOrEmpty(category))
+            {
+                books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category);
+            }
+            else
+            {
+                books = _context.Books.Include(x => x.BookCategory);
+            }
 
-            List<Book> pagBooks = books.Skip(pageSize * (PageNumber - 1)).Take(pageSize).ToList();
+
+            IEnumerable<Book> pagBooks = books.Skip(pageSize * (PageNumber - 1)).Take(pageSize);
 
             return new PagedResultDto<Book>(pagBooks, books.Count(), pageSize);
+        }
+
+        public List<BookCategory> GetCategories()
+        {
+            return _context.BooksCategory.ToList();
         }
 
         public void Update(Book book)

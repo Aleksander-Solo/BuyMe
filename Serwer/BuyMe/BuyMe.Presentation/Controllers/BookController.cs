@@ -17,34 +17,34 @@ namespace BuyMe.Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetBooks(string? sort, int pageSize, int PageNumber)
+        public IActionResult GetBooks(string? sort, int pageSize, int PageNumber, string? category)
         {
-            PagedResultDto<BookDto> books = _bookService.GetBooks(pageSize, PageNumber);
+            PagedResultDto<BookDto> books = _bookService.GetBooks(pageSize, PageNumber, category);
             if (!String.IsNullOrEmpty(sort))
             {
                 if (sort == "priceLower")
                 {
-                    books.items.OrderBy(x => x.Price);
+                    books.items = books.items.OrderBy(x => x.Price);
                     return Ok(books);
                 }
                 else if (sort == "priceUpper")
                 {
-                    books.items.OrderBy(x => x.Price).Reverse();
+                    books.items = books.items.OrderBy(x => x.Price).Reverse();
                     return Ok(books);
                 }
                 else if (sort == "alfabeth")
                 {
-                    books.items.OrderBy(x => x.Title);
+                    books.items = books.items.OrderBy(x => x.Title);
                     return Ok(books);
                 }
                 else if (sort == "alfabethReverse")
                 {
-                    books.items.OrderBy(x => x.Title).Reverse();
+                    books.items = books.items.OrderBy(x => x.Title).Reverse();
                     return Ok(books);
                 }
                 else if (sort == "releaseDate")
                 {
-                    books.items.OrderBy(x => x.Releasedate).Reverse();
+                    books.items = books.items.OrderBy(x => x.Releasedate).Reverse();
                     return Ok(books);
                 }
             }
@@ -55,7 +55,11 @@ namespace BuyMe.Presentation.Controllers
 
             return BadRequest();
         }
-
+        [HttpGet("categories")]
+        public IActionResult GetBookCategorys()
+        {
+            return Ok(_bookService.GetCategories());
+        }
         [HttpGet("{id:int}")]
         public IActionResult GetBook(int id)
         {

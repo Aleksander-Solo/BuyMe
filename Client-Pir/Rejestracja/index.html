@@ -8,7 +8,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
-		<script src="kategorie.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="index.js"></script>
 	</head>
 	<body>
 		<nav class="menu-box">
@@ -32,10 +33,10 @@
 		<section id="log-bar">
 			<form action="#" id="log-box">
 				<div id="log-box-text">Zajerestruj się</div>
-				<input type="text" id="log-box-input" placeholder="Wpisz login" />
-				<input type="password" id="log-box-input" placeholder="Wpisz hasło" />
-				<input type="password" id="log-box-input" placeholder="Powtórz hasło" />
-				<input type="submit" value="Zajerestruj się" id="log-box-input-s" />
+				<input type="text" class="log-box-input" placeholder="Wpisz login" id="email"/>
+				<input type="password" class="log-box-input" placeholder="Wpisz hasło" id="password"/>
+				<input type="text" class="log-box-input" placeholder="Wpisz nazwe Usera" id="Name"/>
+				<input type="submit" value="Zajerestruj się" id="log-box-input-s" onclick="Register()"/>
 				<div id="log-box-text-2">Nie posiadasz konta? <a href="../Logowanie/index.html">Zaloguj się.</a></div>
 			</form>
 		</section>

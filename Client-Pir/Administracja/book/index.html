@@ -33,18 +33,17 @@
 			<form id="formularz">
 			<a href="/BuyMe/Administracja/index.html">Wróć</a>
 				<label for="foto">Prześlij zdjęcie</label><input type="file" id="Image" />
-				<input type="text" placeholder="Tytuł" class="input-text" id="Title"/>
+				<input type="text" placeholder="Tytuł" class="input-text" id="Title" required/>
+				<input type="text" placeholder="Autor" class="input-text" id="Author" required/>
 				<input type="text" placeholder="Wydawnictwo" class="input-text" id="Publishinghosue"/>
-				<input type="date" placeholder="Podaj datę" class="input-text" id="Releasedate"/>
+				<input type="date" placeholder="Podaj datę" class="input-text" id="Releasedate" required/>
 				<input type="number" placeholder="Liczba stron" class="input-text" id="NumOfPag"/>
-				<textarea placeholder="Opis" class="input-text" id="Description"></textarea>
-				<input type="number" placeholder="Cena" class="input-text" id="Price"/>
-				<select class="input-text">
-					<option>Kategoria 1</option>
-					<option>Kategoria 2</option>
-					<option>Kategoria 3</option>
+				<textarea placeholder="Opis" class="input-text" id="Description" style="height: 80px;"></textarea>
+				<input type="number" placeholder="Cena" class="input-text" id="Price" required/>
+				<select class="input-text" id="Categories" required>
+					<option value="0">Wybierz gatunek</option>
 				</select>
-				<input type="submit" value="Dodaj produkt" id="submit-product" onclick="send()"/>
+				<input value="Dodaj produkt" id="submit-product" onclick="send()"/>
 				
 			</form>
 		</section>

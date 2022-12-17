@@ -204,8 +204,12 @@ html, body
 	{
 		font-size: 25px;
 	}
-	#text-product
+	.text-product
 	{
+		font-size: 24px;
+	}
+	.text-product-title{
+		font-weight: 700;
 		font-size: 40px;
 	}
 	#footer
@@ -261,6 +265,9 @@ html, body
 		width: 200px;
 		margin-top: 10px;
 		font-size: 16px;
+	}
+	#dane{
+		width: 500px;
 	}
 }
 

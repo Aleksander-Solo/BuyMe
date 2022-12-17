@@ -10,7 +10,6 @@
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<script src="kategorie.js"></script>
-		<script src="index.js"></script>
 	</head>
 	<body>
 		<nav class="menu-box">
@@ -36,15 +35,7 @@
 				<div id="left-bar">
 					<div id="categories-text">Produkt</div>
 					<div class="categories">Książki</div>
-					<div class="categories-of" style="visibility: hidden; height: 1px;">
-						<div id="categorie">Sci–Fi</div>
-						<div id="categorie">Romans</div>
-						<div id="categorie">Powieść historyczna</div>
-						<div id="categorie">Horror</div>
-						<div id="categorie">Kryminał i thriller</div>
-						<div id="categorie">Biografia i reportaż</div>
-						<div id="categorie">Powieść młodzieżowa</div>
-						<div id="categorie">Literatura dziecięca</div>
+					<div class="categories-of" style="visibility: hidden; height: 1px;" id="cat-book-list">
 					</div>
 					<div class="categories">Gry</div>
 					<div class="categories-of" style="visibility: hidden; height: 1px;">
@@ -78,13 +69,12 @@
 				<div id="right-bar">
 					<div id="up-bar">
 						<form action="#">
-							<select name="sortowanie" id="sort">
+							<select name="sortowanie" id="sort" onchange="sortFun()">
 								<option value="" selected>Wybierz sortowanie</option>
-								<option>Popularne</option>
-								<option>Od A-Z</option>
-								<option>Od Z-A</option>
-								<option>Cena rosnąco</option>
-								<option>Cena malejąco</option>
+								<option value="alfabeth">Od A-Z</option>
+								<option value="alfabethReverse">Od Z-A</option>
+								<option value="priceLower">Cena rosnąco</option>
+								<option value="priceUpper">Cena malejąco</option>
 							</select>
 						</form>
 					</div>
@@ -132,5 +122,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="index.js"></script>
 	</body>
 </html>

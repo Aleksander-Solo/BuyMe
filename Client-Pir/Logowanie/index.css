@@ -173,7 +173,7 @@ html, body
 		font-size: 40px;
 		margin-bottom: 30px;
 	}
-	#log-box-input
+	.log-box-input
 	{
 		width: 300px;
 		height: 40px;
@@ -186,7 +186,7 @@ html, body
 		font-family: 'Nunito', sans-serif;
 
 	}
-	#log-box-input-s{
+	.log-box-input-s{
 		background: none;
 		border: none;
 		border: 1px solid black;
@@ -198,7 +198,7 @@ html, body
 		color: black;
 		transition: 0.5s;
 	}
-	#log-box-input-s:hover
+	.log-box-input-s:hover
 	{
 		background-color: black;
 		color: white;

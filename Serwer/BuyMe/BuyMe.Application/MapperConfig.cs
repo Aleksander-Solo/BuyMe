@@ -25,6 +25,8 @@ namespace BuyMe.Application
                 options.CreateMap<GameCommentDto, GameComment>();
                 //Users
                 options.CreateMap<RegisterUserDto, User>().ForMember(x => x.HashPassword, y => y.MapFrom(z => z.Password));
+                //Category
+                options.CreateMap<BookCategoryDto, BookCategory>().ReverseMap();
 
             }).CreateMapper();
         }
@@ -33,12 +35,14 @@ namespace BuyMe.Application
         #endregion
 
         #region Book
-        public List<Book> Map(List<BookDto> books) => mMapper.Map<List<Book>>(books);
-        public List<BookDto> Map(List<Book> books) => mMapper.Map<List<BookDto>>(books);
+        public IEnumerable<Book> Map(IEnumerable<BookDto> books) => mMapper.Map<IEnumerable<Book>>(books);
+        public IEnumerable<BookDto> Map(IEnumerable<Book> books) => mMapper.Map<IEnumerable<BookDto>>(books);
         public Book Map(BookDto book) => mMapper.Map<Book>(book);
         public BookDto Map(Book book) => mMapper.Map<BookDto>(book);
         public Book Map(CreateBookDto book) => mMapper.Map<Book>(book);
         public BookComment Map(BookCommentDto comment) => mMapper.Map<BookComment>(comment);
+        public List<BookCategoryDto> Map(List<BookCategory> bookCategory) => mMapper.Map<List<BookCategoryDto>>(bookCategory);
+        public BookCategory Map(BookCategoryDto bookCategory) => mMapper.Map<BookCategory>(bookCategory);
         #endregion
 
         #region Film
