@@ -332,6 +332,24 @@ html, body
 		margin-top: 10px;
 		font-size: 16px;
 	}
+	#paggination{
+		width: 200px;
+		height: 50px;
+		margin-left: 30px;
+	}
+	.pag{
+		float: left;
+		display: block;
+		text-align: center;
+		padding: 10px;
+		font-size: 23px;
+		border: 1px solid black;
+		height: 30px;
+	}
+	.pag:hover{
+		border: 1px solid crimson;
+		cursor: pointer;
+	}
 }
 
 @keyframes transitionIn{

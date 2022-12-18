@@ -133,7 +133,9 @@ const createBook = book => {
             "Access-Control-Allow-Origin": "*"
           }
       }).then((response) => {
+        debugger
         console.log(response.status);
+        console.log(book);
         if(response.status == 201){
           window.location.href = "D:/BuyMe/BuyMe/Client-Pir/Produkty/index.html"
         }

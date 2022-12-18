@@ -4,15 +4,21 @@ function sortFun(){
   const main = document.getElementById("main-product");
   main.innerHTML = '';
   axios
-      .get('https://olopl.bsite.net/api/Book?pageSize=9&PageNumber=1&sort=' + sort + '&category=' + newcategorie)
+      .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber='+ actualPage +'&sort=' + sort + '&category=' + newcategorie)
       .then(response => {
         const books = response.data.items
         // append to DOM
         console.log(response.data.items);
         appendToDOM(books)
+        debugger
+        CreatePaggination(response.data.totalPages)
+        debugger
       })
       .catch(error => console.error(error))
 }
+
+let actualPage = 1
+
 const createDiv = book => {
     const box = document.createElement('div')
     box.classList.add('product-box');
@@ -28,10 +34,10 @@ const createDiv = book => {
     return a
   }
   const createPrice = book => {
-    const price = document.createElement('div')
+    const price = document.createElement('h4')
     price.classList.add('product-price');
     price.setAttribute('style', 'white-space: pre;');
-    price.textContent = `${book.title} ${book.author} \r\n `
+    price.textContent = `${book.title} \r\n `
     price.textContent += `${book.price} zł.`
     return price
   }
@@ -59,12 +65,14 @@ const createDiv = book => {
   
   const fetchUsers = () => {
     axios
-      .get('https://olopl.bsite.net/api/Book?pageSize=9&PageNumber=1')
+      .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=1')
       .then(response => {
         const books = response.data.items
         // append to DOM
         console.log(response.data.items);
         appendToDOM(books)
+        CreatePaggination(response.data.totalPages)
+        debugger
       })
       .catch(error => console.error(error))
       
@@ -99,12 +107,13 @@ const createDiv = book => {
           const main = document.getElementById("main-product");
           main.innerHTML = '';
           axios
-              .get('https://olopl.bsite.net/api/Book?pageSize=9&PageNumber=1&category=' + categorie.name)
+              .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=1&category=' + categorie.name)
               .then(response => {
                 const books = response.data.items
                 // append to DOM
                 console.log(response.data.items);
                 appendToDOM(books)
+                CreatePaggination(response.data.totalPages)
               })
               .catch(error => console.error(error))
                 }, false);
@@ -112,3 +121,29 @@ const createDiv = book => {
       }
 
   fetchUsers()
+  const  CreatePaggination = pageNumber =>{
+    const paggination = document.querySelector("#paggination")
+    paggination.innerHTML = ""
+    for(i = 1; i < pageNumber + 1; i++)
+    {
+      const pag = document.createElement('div')
+      pag.classList.add("pag")
+      pag.innerHTML = i
+      pag.addEventListener('click', function() {
+        axios
+          .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie)
+          .then(response => {
+            const books = response.data.items
+            // append to DOM
+            console.log(response.data.items);
+            console.log('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie);
+            const main = document.getElementById("main-product");
+            main.innerHTML = '';
+            actualPage = pag.innerHTML
+            appendToDOM(books)
+          })
+          .catch(error => console.error(error))
+            }, false);
+            paggination.appendChild(pag)
+    }
+  }
