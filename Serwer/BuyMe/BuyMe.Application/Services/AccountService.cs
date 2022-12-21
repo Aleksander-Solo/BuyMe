@@ -35,7 +35,7 @@ namespace BuyMe.Application.Services
             return _repositiory.CheckEmail(email);
         }
 
-        public string GenerateJwt(LoginUserDto loginUser)
+        public UserTokenDto GenerateJwt(LoginUserDto loginUser)
         {
             User user = _repositiory.GetUser(loginUser.Email);
             if (user is null)
@@ -62,7 +62,15 @@ namespace BuyMe.Application.Services
                 expires: expires,
                 signingCredentials: cred);
             var tokenHandler = new JwtSecurityTokenHandler();
-            return tokenHandler.WriteToken(token);
+
+            UserTokenDto userToken = new UserTokenDto()
+            {
+                Name = user.Name,
+                Token = tokenHandler.WriteToken(token),
+                Role = user.Role.Name,
+                Id = user.Id
+            };
+            return userToken;
         }
     }
 }

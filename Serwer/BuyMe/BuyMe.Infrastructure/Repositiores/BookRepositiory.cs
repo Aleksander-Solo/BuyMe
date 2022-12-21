@@ -26,6 +26,7 @@ namespace BuyMe.Infrastructure.Repositiores
         public void CreateComment(BookComment comment)
         {
             comment.CreateDate = DateTime.Now;
+            comment.User = null;
             _context.BooksComment.Add(comment);
             _context.SaveChanges();
         }
@@ -42,7 +43,7 @@ namespace BuyMe.Infrastructure.Repositiores
 
         public Book GetBook(int id)
         {
-            Book book = _context.Books.Include(x => x.BookCategory).Include(x => x.BookComments).FirstOrDefault(x => x.Id == id);
+            Book book = _context.Books.Include(x => x.BookCategory).Include(x => x.BookComments).ThenInclude(x => x.User).FirstOrDefault(x => x.Id == id);
 
             if (book is null)
                 throw new NotFoundException("Book not found");

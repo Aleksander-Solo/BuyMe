@@ -6,6 +6,6 @@ namespace BuyMe.Domain.Interfaces.Application
     {
         public void CreateUser(RegisterUserDto user);
         public bool CheckEmail(string email);
-        public string GenerateJwt(LoginUserDto loginUser);
+        public UserTokenDto GenerateJwt(LoginUserDto loginUser);
     }
 }

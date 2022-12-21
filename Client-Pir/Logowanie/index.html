@@ -30,11 +30,11 @@
 			</div>
 		</nav>
 		<section id="log-bar">
-			<form id="log-box">
+			<form id="log-box" onsubmit="send();return false">
 				<div id="log-box-text">Zaloguj się</div>
 				<input type="text" class="log-box-input" placeholder="Wpisz login" id="email"/>
 				<input type="password" class="log-box-input" placeholder="Wpisz hasło" id="password"/>
-				<input type="submit" value="Zaloguj się" class="log-box-input-s" onclick="send()"/>
+				<button type="submit" class="log-box-input-s">Zaloguj się</button>
 				<div id="log-box-text-2">Nie posiadasz konta? <a href="../Rejestracja/index.html">Zajerestruj się.</a></div>
 			</form>
 		</section>

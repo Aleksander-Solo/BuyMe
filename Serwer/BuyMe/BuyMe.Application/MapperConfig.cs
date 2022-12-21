@@ -20,7 +20,7 @@ namespace BuyMe.Application
                 options.CreateMap<Game, GameDto>().ForMember(x => x.GameCategory, y => y.MapFrom(z => z.GameCategory.Name)).ReverseMap();
                 options.CreateMap<Game, CreateGameDto>().ReverseMap();
                 //Comments
-                options.CreateMap<BookCommentDto, BookComment>().ReverseMap(); ;
+                options.CreateMap<BookCommentDto, BookComment>().ForPath(x => x.User.Name, y => y.MapFrom(z => z.UserName)).ReverseMap(); ;
                 options.CreateMap<FilmCommentDto, FilmComment>();
                 options.CreateMap<GameCommentDto, GameComment>();
                 //Users

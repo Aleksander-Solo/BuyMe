@@ -81,7 +81,6 @@ function send(){
       const descriptionInput = document.querySelector('#Categories')
       descriptionInput.classList.remove("input-text-error")
     }
-    debugger
     if(flag){
       const book = { image, title, author, publishinghosue, releasedate, numOfPag, description, price, bookCategoryId}
       console.log(book)

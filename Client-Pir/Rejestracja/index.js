@@ -8,7 +8,6 @@ function Register(){
 }
 
 const sendUser = registerObject => {
-    debugger
     axios({
         method: 'post',
         url: 'https://olopl.bsite.net/api/Account/register',
@@ -25,14 +24,14 @@ const sendUser = registerObject => {
           window.location.href = "D:/BuyMe/BuyMe/Client-Pir/Produkty/index.html"
         }
       }).catch(error => badRequest());
-      const badRequest = () =>{
-            const box = document.querySelector("#log-box")
-            const erro = document.querySelector(".error")
-            if(!erro){
-                const err = document.createElement("h1")
-                err.classList.add("error")
-                err.innerHTML = "Dane niepoprawne!"
-                box.appendChild(err)
-            }
-      }
   }
+  const badRequest = () =>{
+    const box = document.querySelector("#log-box")
+    const erro = document.querySelector(".error")
+    if(!erro){
+        const err = document.createElement("h1")
+        err.classList.add("error")
+        err.innerHTML = "Dane niepoprawne!"
+        box.appendChild(err)
+    }
+}

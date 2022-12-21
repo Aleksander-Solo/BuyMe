@@ -4,7 +4,7 @@ function sortFun(){
   const main = document.getElementById("main-product");
   main.innerHTML = '';
   axios
-      .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber='+ actualPage +'&sort=' + sort + '&category=' + newcategorie)
+      .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber='+ actualPage +'&sort=' + sort + '&category=' + newcategorie)
       .then(response => {
         const books = response.data.items
         // append to DOM
@@ -65,7 +65,7 @@ const createDiv = book => {
   
   const fetchUsers = () => {
     axios
-      .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=1')
+      .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1')
       .then(response => {
         const books = response.data.items
         // append to DOM
@@ -103,11 +103,10 @@ const createDiv = book => {
           const sort = document.querySelector('#sort')
           sort.value = ""
           newcategorie = categorie.name
-          debugger
           const main = document.getElementById("main-product");
           main.innerHTML = '';
           axios
-              .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=1&category=' + categorie.name)
+              .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1&category=' + categorie.name)
               .then(response => {
                 const books = response.data.items
                 // append to DOM
@@ -131,16 +130,17 @@ const createDiv = book => {
       pag.innerHTML = i
       pag.addEventListener('click', function() {
         axios
-          .get('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie)
+          .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie)
           .then(response => {
             const books = response.data.items
             // append to DOM
-            console.log(response.data.items);
-            console.log('https://olopl.bsite.net/api/Book?pageSize=6&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie);
+            console.log('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie);
             const main = document.getElementById("main-product");
             main.innerHTML = '';
             actualPage = pag.innerHTML
             appendToDOM(books)
+            const sort = document.querySelector('#sort')
+            sort.value = ""
           })
           .catch(error => console.error(error))
             }, false);

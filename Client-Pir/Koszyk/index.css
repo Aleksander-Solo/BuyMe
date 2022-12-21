@@ -172,17 +172,17 @@ html, body
 		min-height: 300px;
 		margin-bottom: 20px;
 	}
-	#content-box
+	.content-box
 	{
 		border-bottom: 1px solid black;
 	}
-	#content-box, #suma
+	.content-box, #suma
 	{
 		width: 100%;
 		display: flex;
 		min-height: 50px;
 	}
-	#box-nazwa, #suma-text
+	.box-nazwa, #suma-text
 	{
 		width: 70%;
 		min-height: 50px;
@@ -199,7 +199,7 @@ html, body
 		justify-content: flex-end;
 		align-items: center;		
 	}
-	#box-cena, #suma-text-2
+	.box-cena, #suma-text-2
 	{
 		width: 20%;
 		min-height: 50px;
@@ -208,7 +208,7 @@ html, body
 		justify-content: center;
 		align-items: center;		
 	}
-	#box-out
+	.box-out
 	{
 		width: 10%;
 		min-height: 50px;
