@@ -15,14 +15,53 @@ namespace BuyMe.Presentation.Controllers
             _gameService = gameService;
         }
         [HttpGet]
-        public IActionResult GetGames()
+        public IActionResult GetGames(string? sort, int pageSize, int PageNumber, string? category)
         {
-            return Ok(_gameService.GetGames());
+            PagedResultDto<GameDto> games = _gameService.GetGames(pageSize, PageNumber, category);
+            if (!String.IsNullOrEmpty(sort))
+            {
+                if (sort == "priceLower")
+                {
+                    games.items = games.items.OrderBy(x => x.Price);
+                    return Ok(games);
+                }
+                else if (sort == "priceUpper")
+                {
+                    games.items = games.items.OrderBy(x => x.Price).Reverse();
+                    return Ok(games);
+                }
+                else if (sort == "alfabeth")
+                {
+                    games.items = games.items.OrderBy(x => x.Title);
+                    return Ok(games);
+                }
+                else if (sort == "alfabethReverse")
+                {
+                    games.items = games.items.OrderBy(x => x.Title).Reverse();
+                    return Ok(games);
+                }
+                else if (sort == "releaseDate")
+                {
+                    games.items = games.items.OrderBy(x => x.Releasedate).Reverse();
+                    return Ok(games);
+                }
+            }
+            else
+            {
+                return Ok(games);
+            }
+
+            return BadRequest();
         }
         [HttpGet("{id:int}")]
         public IActionResult GetGame(int id)
         {
             return Ok(_gameService.GetGame(id));
+        }
+        [HttpGet("categories")]
+        public IActionResult GetBookCategorys()
+        {
+            return Ok(_gameService.GetCategories());
         }
         [HttpPost("comment")]
         public IActionResult AddBookComments([FromBody] GameCommentDto commentDto)

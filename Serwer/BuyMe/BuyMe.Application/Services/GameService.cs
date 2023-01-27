@@ -31,14 +31,21 @@ namespace BuyMe.Application.Services
             _repositiory.Delete(id);
         }
 
+        public List<GameCategoryDto> GetCategories()
+        {
+            return _mapper.Map(_repositiory.GetCategories());
+        }
+
         public GameDto GetGame(int id)
         {
             return _mapper.Map(_repositiory.GetGame(id));
         }
 
-        public List<GameDto> GetGames()
+        public PagedResultDto<GameDto> GetGames(int pageSize, int PageNumber, string category)
         {
-            return _mapper.Map(_repositiory.GetGames());
+            PagedResultDto<Game> games = _repositiory.GetGames(pageSize, PageNumber, category);
+            PagedResultDto<GameDto> mappedGames = new PagedResultDto<GameDto>(_mapper.Map(games.items), games.totalItemCount, pageSize);
+            return mappedGames;
         }
 
         public void Update(int id, GameDto game)

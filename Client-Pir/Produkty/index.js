@@ -1,3 +1,5 @@
+const urlParams = new URLSearchParams(window.location.search);
+
 let newcategorie = ""
 function sortFun(){
   const sort = document.querySelector('#sort').value
@@ -62,20 +64,12 @@ const createDiv = book => {
         list.appendChild(createA(book))
     })
   }
-  
-  const fetchUsers = () => {
-    axios
-      .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1')
-      .then(response => {
-        const books = response.data.items
-        // append to DOM
-        console.log(response.data.items);
-        appendToDOM(books)
-        CreatePaggination(response.data.totalPages)
-        debugger
-      })
-      .catch(error => console.error(error))
-      
+  const appendCategories = categories => {
+    const select = document.querySelector('#cat-book-list')
+    //iterate over all books
+    categories.map(categorie => {
+      select.appendChild(createOption(categorie))
+    })
   }
 
   axios
@@ -87,14 +81,47 @@ const createDiv = book => {
         appendCategories(categories)
       })
       .catch(error => console.error(error))
-  
-      const appendCategories = categories => {
-        const select = document.querySelector('#cat-book-list')
-        //iterate over all books
-        categories.map(categorie => {
-          select.appendChild(createOption(categorie))
-        })
-      }
+
+  function Start(){
+    if(urlParams.get('target') == "Book"){
+      debugger
+        axios
+          .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1')
+          .then(response => {
+            const books = response.data.items
+            // append to DOM
+            console.log(response.data.items);
+            appendToDOM(books)
+            CreatePaggination(response.data.totalPages)
+            debugger
+          })
+          .catch(error => console.error(error))
+    }else if(urlParams.get('target') == "Game"){
+        axios
+          .get('https://olopl.bsite.net/api/Game?pageSize=8&PageNumber=1')
+          .then(response => {
+            const books = response.data.items
+            // append to DOM
+            console.log(response.data.items);
+            appendToDOM(books)
+            CreatePaggination(response.data.totalPages)
+            debugger
+          })
+          .catch(error => console.error(error))
+    }else{
+        axios
+          .get('https://olopl.bsite.net/api/Film?pageSize=8&PageNumber=1')
+          .then(response => {
+            const books = response.data.items
+            // append to DOM
+            console.log(response.data.items);
+            appendToDOM(books)
+            CreatePaggination(response.data.totalPages)
+            debugger
+          })
+          .catch(error => console.error(error))
+  }}
+
       const createOption = categorie => {
         const option = document.createElement('div')
         option.id = "categorie"
@@ -119,7 +146,7 @@ const createDiv = book => {
           return option
       }
 
-  fetchUsers()
+  Start();
   const  CreatePaggination = pageNumber =>{
     const paggination = document.querySelector("#paggination")
     paggination.innerHTML = ""
@@ -145,5 +172,4 @@ const createDiv = book => {
           .catch(error => console.error(error))
             }, false);
             paggination.appendChild(pag)
-    }
-  }
+    }}

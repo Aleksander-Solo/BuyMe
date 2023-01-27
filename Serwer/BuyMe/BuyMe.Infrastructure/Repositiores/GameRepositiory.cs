@@ -1,5 +1,7 @@
-﻿using BuyMe.Domain.Entities;
+﻿using BuyMe.Domain.DTO;
+using BuyMe.Domain.Entities;
 using BuyMe.Domain.Interfaces.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace BuyMe.Infrastructure.Repositiores
 {
@@ -33,15 +35,33 @@ namespace BuyMe.Infrastructure.Repositiores
             _context.SaveChanges();
         }
 
+        public List<GameCategory> GetCategories()
+        {
+            return _context.GamesCategory.ToList();
+        }
+
         public Game GetGame(int id)
         {
             Game game = _context.Games.FirstOrDefault(x => x.Id == id);
             return game;
         }
 
-        public List<Game> GetGames()
+        public PagedResultDto<Game> GetGames(int pageSize, int PageNumber, string category)
         {
-            return _context.Games.ToList();
+            IQueryable<Game> games;
+            if (!String.IsNullOrEmpty(category))
+            {
+                games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category);
+            }
+            else
+            {
+                games = _context.Games.Include(x => x.GameCategory);
+            }
+
+
+            IEnumerable<Game> pagGames = games.Skip(pageSize * (PageNumber - 1)).Take(pageSize);
+
+            return new PagedResultDto<Game>(pagGames, games.Count(), pageSize);
         }
 
         public void Update(Game game)

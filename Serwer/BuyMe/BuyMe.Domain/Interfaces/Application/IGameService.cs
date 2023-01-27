@@ -4,11 +4,12 @@ namespace BuyMe.Domain.Interfaces.Application
 {
     public interface IGameService
     {
-        public List<GameDto> GetGames();
+        public PagedResultDto<GameDto> GetGames(int pageSize, int PageNumber, string category);
         public GameDto GetGame(int id);
         public void Delete(int id);
         public void Update(int id, GameDto game);
         public int Create(CreateGameDto game);
         public void CreateComment(GameCommentDto comment);
+        public List<GameCategoryDto> GetCategories();
     }
 }

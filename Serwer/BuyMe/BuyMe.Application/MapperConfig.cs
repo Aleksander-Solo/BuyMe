@@ -27,6 +27,7 @@ namespace BuyMe.Application
                 options.CreateMap<RegisterUserDto, User>().ForMember(x => x.HashPassword, y => y.MapFrom(z => z.Password));
                 //Category
                 options.CreateMap<BookCategoryDto, BookCategory>().ReverseMap();
+                options.CreateMap<GameCategoryDto, GameCategory>().ReverseMap();
 
             }).CreateMapper();
         }
@@ -55,12 +56,15 @@ namespace BuyMe.Application
         #endregion
 
         #region Game
-        public List<Game> Map(List<GameDto> games) => mMapper.Map<List<Game>>(games);
-        public List<GameDto> Map(List<Game> games) => mMapper.Map<List<GameDto>>(games);
+        public IEnumerable<Game> Map(IEnumerable<GameDto> games) => mMapper.Map<IEnumerable<Game>>(games);
+        public IEnumerable<GameDto> Map(IEnumerable<Game> games) => mMapper.Map<IEnumerable<GameDto>>(games);
         public Game Map(GameDto game) => mMapper.Map<Game>(game);
         public GameDto Map(Game game) => mMapper.Map<GameDto>(game);
         public Game Map(CreateGameDto game) => mMapper.Map<Game>(game);
         public GameComment Map(GameCommentDto game) => mMapper.Map<GameComment>(game);
+        public List<GameCategoryDto> Map(List<GameCategory> gameCategory) => mMapper.Map<List<GameCategoryDto>>(gameCategory);
+        public GameCategory Map(GameCategoryDto gameCategory) => mMapper.Map<GameCategory>(gameCategory);
+
         #endregion
     }
 }
