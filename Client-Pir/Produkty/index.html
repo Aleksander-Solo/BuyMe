@@ -22,9 +22,9 @@
 					</form>
 				</div>
 				<div id="categories-image">
-					<a href="/BuyMe/Produkty/index.html"><div id="book"></div></a>
-					<a href="/BuyMe/Produkty/index.html"><div id="games"></div></a>
-					<a href="/BuyMe/Produkty/index.html"><div id="videos"></div></a>
+					<a href="/BuyMe/Produkty/index.html?target=Book"><div id="book"></div></a>
+					<a href="/BuyMe/Produkty/index.html?target=Game"><div id="games"></div></a>
+					<a href="/BuyMe/Produkty/index.html?target=Film"><div id="videos"></div></a>
 				</div>
 				<a href="/BuyMe/Koszyk/index.html"><div id="shopping"></div></a>
 				<a href="/BuyMe/Logowanie/index.html"><div id="user"></div></a>
@@ -34,22 +34,14 @@
 			<div id="product-content">
 				<div id="left-bar">
 					<div id="categories-text">Produkt</div>
-					<div class="categories">Książki</div>
+					<div class="categories" id="cat-book">Książki</div>
 					<div class="categories-of" style="visibility: hidden; height: 1px;" id="cat-book-list">
 					</div>
-					<div class="categories">Gry</div>
-					<div class="categories-of" style="visibility: hidden; height: 1px;">
-						<div id="categorie">Zręcznościowe</div>
-						<div id="categorie">Przygodowe</div>
-						<div id="categorie">Fabularne</div>
-						<div id="categorie">Strategiczne</div>
-						<div id="categorie">Symulacyjne</div>
-						<div id="categorie">Sportowe</div>
-						<div id="categorie">Logiczne</div>
-						<div id="categorie">Edukacyjne</div>
+					<div class="categories" id="cat-game">Gry</div>
+					<div class="categories-of" style="visibility: hidden; height: 1px;" id="cat-game-list">
 					</div>
-					<div class="categories">Filmy</div>
-					<div class="categories-of" style="visibility: hidden; height: 1px;">
+					<div class="categories" id="cat-film">Filmy</div>
+					<div class="categories-of" style="visibility: hidden; height: 1px;" id="cat-film-list">
 						<div id="categorie">Komedia</div>
 						<div id="categorie">Dreszczowiec</div>
 						<div id="categorie">Dramat</div>
@@ -81,6 +73,7 @@
 							</div>
 					</div>
 					<div id="main-product">
+						<div class="spinner"></div>
 					</div>
 				</div>
 			</div>

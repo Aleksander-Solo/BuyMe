@@ -15,43 +15,9 @@ namespace BuyMe.Presentation.Controllers
             _gameService = gameService;
         }
         [HttpGet]
-        public IActionResult GetGames(string? sort, int pageSize, int PageNumber, string? category)
+        public IActionResult GetGames(string? sort, int pageSize, int PageNumber, string? category, string? phrase)
         {
-            PagedResultDto<GameDto> games = _gameService.GetGames(pageSize, PageNumber, category);
-            if (!String.IsNullOrEmpty(sort))
-            {
-                if (sort == "priceLower")
-                {
-                    games.items = games.items.OrderBy(x => x.Price);
-                    return Ok(games);
-                }
-                else if (sort == "priceUpper")
-                {
-                    games.items = games.items.OrderBy(x => x.Price).Reverse();
-                    return Ok(games);
-                }
-                else if (sort == "alfabeth")
-                {
-                    games.items = games.items.OrderBy(x => x.Title);
-                    return Ok(games);
-                }
-                else if (sort == "alfabethReverse")
-                {
-                    games.items = games.items.OrderBy(x => x.Title).Reverse();
-                    return Ok(games);
-                }
-                else if (sort == "releaseDate")
-                {
-                    games.items = games.items.OrderBy(x => x.Releasedate).Reverse();
-                    return Ok(games);
-                }
-            }
-            else
-            {
-                return Ok(games);
-            }
-
-            return BadRequest();
+            return Ok(_gameService.GetGames(pageSize, PageNumber, category, phrase, sort));
         }
         [HttpGet("{id:int}")]
         public IActionResult GetGame(int id)

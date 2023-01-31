@@ -5,7 +5,7 @@ namespace BuyMe.Domain.Interfaces.Infrastructure
 {
     public interface IBookRepositiory
     {
-        public PagedResultDto<Book> GetBooks(int pageSize, int PageNumber, string category);
+        public PagedResultDto<Book> GetBooks(int pageSize, int PageNumber, string category, string phrase, string sort);
         public Book GetBook(int id);
         public void Delete(int id);
         public void Update(Book book);

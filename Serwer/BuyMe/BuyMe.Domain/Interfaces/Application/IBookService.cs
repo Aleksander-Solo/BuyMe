@@ -4,7 +4,7 @@ namespace BuyMe.Domain.Interfaces.Application
 {
     public interface IBookService
     {
-        public PagedResultDto<BookDto> GetBooks(int pageSize, int PageNumber, string category);
+        public PagedResultDto<BookDto> GetBooks(int pageSize, int PageNumber, string category, string phrase, string sort);
         public BookDto GetBook(int id);
         public void Delete(int id);
         public void Update(int id, BookDto book);

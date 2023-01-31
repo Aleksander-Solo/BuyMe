@@ -5,7 +5,7 @@ namespace BuyMe.Domain.Interfaces.Infrastructure
 {
     public interface IGameRepositiory
     {
-        public PagedResultDto<Game> GetGames(int pageSize, int PageNumber, string category);
+        public PagedResultDto<Game> GetGames(int pageSize, int PageNumber, string category, string phrase, string sort);
         public Game GetGame(int id);
         public void Delete(int id);
         public void Update(Game game);

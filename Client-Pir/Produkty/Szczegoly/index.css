@@ -7,6 +7,29 @@ html, body
 	font-family: 'Nunito', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.spinner{
+  width: 80px;
+  height: 80px;
+  margin-top: 150px;
+  border: 7px solid red;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.7s linear infinite;
+}
+@keyframes spinner{
+  from{}
+    to{
+      transform: rotate(360deg);
+    }
+}
+
 #a-white
 {
 	text-decoration: none;

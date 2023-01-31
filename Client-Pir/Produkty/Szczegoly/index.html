@@ -31,17 +31,28 @@
 				<a href="/BuyMe/Logowanie/index.html"><div id="user"></div></a>
 			</div>
 		</nav>
+		<div class="modal" id="myModal">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+		  
+				<!-- Modal Header -->
+				<div class="modal-header">
+				  <h4 class="modal-title">Czy napewno chcesz usunąć ten produkt?</h4>
+				  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>	  
+				<!-- Modal footer -->
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-info" data-bs-dismiss="modal">Anuluj</button>
+				  <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="Delete()">Usuń</button>
+				</div>
+		  
+			  </div>
+			</div>
+		  </div>
 		<section id="szczegoly-box">
 			<div id="product">
 				<div id="photo-product"><img src="" id="product-photo-img" /></div>
 				<div id="dane">
-					<div class="text-product-title" id="Title">Ładowanie ...</div><hr/>
-					<div class="text-product" id="Price"></div>
-					<div class="text-product" id="Publishinghosue"></div>
-					<div class="text-product" id="Releasedate"></div>
-					<div class="text-product" id="NumOfPag"></div>
-					<div class="text-product" id="BookCategory"></div>
-					<p style="margin-top: 10px;"><button class="btn btn-success" onclick="addToShopCard()">Dodaj do koszyka</button></p>
 				</div>
 			</div>
 			<div id="opis-kom">
@@ -51,7 +62,7 @@
 				</div>
 				<!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="float: right; font-size: 20px;">
-	Dodaj komentarz
+	Dodaj komentarz <i class="fa-regular fa-comment"></i>
 </button>
   
   <!-- Modal -->
@@ -121,5 +132,6 @@
 			</div>
 		</footer>
 		<script src="index.js"></script>
+		<script src="https://kit.fontawesome.com/a5fd6cf39a.js" crossorigin="anonymous"></script>
 	</body>
 </html>

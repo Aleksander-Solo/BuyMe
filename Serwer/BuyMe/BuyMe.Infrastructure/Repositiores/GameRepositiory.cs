@@ -42,20 +42,139 @@ namespace BuyMe.Infrastructure.Repositiores
 
         public Game GetGame(int id)
         {
-            Game game = _context.Games.FirstOrDefault(x => x.Id == id);
+            Game game = _context.Games.Include(x => x.GameCategory).Include(x => x.GameComments).FirstOrDefault(x => x.Id == id);
             return game;
         }
 
-        public PagedResultDto<Game> GetGames(int pageSize, int PageNumber, string category)
+        public PagedResultDto<Game> GetGames(int pageSize, int PageNumber, string category, string phrase, string sort)
         {
-            IQueryable<Game> games;
+            IQueryable<Game> games = null;
+
             if (!String.IsNullOrEmpty(category))
             {
-                games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category);
+                if (!String.IsNullOrEmpty(phrase))
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category && x.Title.Contains(phrase));
+                    }
+                }
+                else
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        games = _context.Games.Include(x => x.GameCategory).Where(x => x.GameCategory.Name == category);
+                    }
+                }
             }
             else
             {
-                games = _context.Games.Include(x => x.GameCategory);
+                if (!String.IsNullOrEmpty(phrase))
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        games = _context.Games.Include(x => x.GameCategory).Where(x => x.Title.Contains(phrase));
+                    }
+                }
+                else
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            games = _context.Games.Include(x => x.GameCategory).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        games = _context.Games.Include(x => x.GameCategory);
+                    }
+                }
             }
 
 

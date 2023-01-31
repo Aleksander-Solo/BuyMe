@@ -1,20 +1,27 @@
 const urlParams = new URLSearchParams(window.location.search);
 
+function Spinner(){
+  const list = document.querySelector('#main-product')
+  const spinner = document.createElement('div')
+  spinner.classList.add('spinner');
+  list.appendChild(spinner);
+}
+let target = "Book";
 let newcategorie = ""
 function sortFun(){
   const sort = document.querySelector('#sort').value
   const main = document.getElementById("main-product");
-  main.innerHTML = '';
+  main.innerHTML = "";
+  Spinner();
+  debugger
   axios
-      .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber='+ actualPage +'&sort=' + sort + '&category=' + newcategorie)
+      .get('https://olopl.bsite.net/api/'+ target +'?pageSize=8&PageNumber='+ actualPage +'&sort=' + sort + '&category=' + newcategorie)
       .then(response => {
         const books = response.data.items
         // append to DOM
         console.log(response.data.items);
         appendToDOM(books)
-        debugger
         CreatePaggination(response.data.totalPages)
-        debugger
       })
       .catch(error => console.error(error))
 }
@@ -31,7 +38,7 @@ const createDiv = book => {
   const createA = book => {
     const a = document.createElement('a')
     a.classList.add('link-prod');
-    a.href = `/BuyMe/Produkty/Szczegoly/index.html?id=${book.id}`
+    a.href = `/BuyMe/Produkty/Szczegoly/index.html?id=${book.id}&target=${target}`
     a.appendChild(createDiv(book))
     return a
   }
@@ -59,32 +66,47 @@ const createDiv = book => {
   
   const appendToDOM = books => {
     const list = document.querySelector('#main-product')
+    list.innerHTML = ""
     //iterate over all books
     books.map(book => {
         list.appendChild(createA(book))
     })
   }
-  const appendCategories = categories => {
-    const select = document.querySelector('#cat-book-list')
+  const appendCategories = (categories, id)=> {
+    const select = document.querySelector(id)
     //iterate over all books
     categories.map(categorie => {
-      select.appendChild(createOption(categorie))
+      if(id == '#cat-book-list'){
+        select.appendChild(ProductBook(categorie))
+      }else if(id == '#cat-game-list'){
+        select.appendChild(ProductGame(categorie))
+      }
     })
   }
 
-  axios
+  function Start(){
+    axios
       .get('https://olopl.bsite.net/api/Book/categories')
       .then(response => {
         const categories = response.data
         // append to DOM
         console.log(response.data);
-        appendCategories(categories)
+        appendCategories(categories, '#cat-book-list')
       })
       .catch(error => console.error(error))
+      axios
+      .get('https://olopl.bsite.net/api/Game/categories')
+      .then(response => {
+        const categories = response.data
+        // append to DOM
+        console.log(response.data);
+        appendCategories(categories, '#cat-game-list')
+      })
+      .catch(error => console.error(error))
+      
 
-  function Start(){
     if(urlParams.get('target') == "Book"){
-      debugger
+      target = "Book";
         axios
           .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1')
           .then(response => {
@@ -93,10 +115,10 @@ const createDiv = book => {
             console.log(response.data.items);
             appendToDOM(books)
             CreatePaggination(response.data.totalPages)
-            debugger
           })
           .catch(error => console.error(error))
     }else if(urlParams.get('target') == "Game"){
+      target = "Game";
         axios
           .get('https://olopl.bsite.net/api/Game?pageSize=8&PageNumber=1')
           .then(response => {
@@ -105,10 +127,10 @@ const createDiv = book => {
             console.log(response.data.items);
             appendToDOM(books)
             CreatePaggination(response.data.totalPages)
-            debugger
           })
           .catch(error => console.error(error))
-    }else{
+    }else if(urlParams.get('target') == "Film"){
+      target = "Film";
         axios
           .get('https://olopl.bsite.net/api/Film?pageSize=8&PageNumber=1')
           .then(response => {
@@ -117,27 +139,63 @@ const createDiv = book => {
             console.log(response.data.items);
             appendToDOM(books)
             CreatePaggination(response.data.totalPages)
-            debugger
+          })
+          .catch(error => console.error(error))
+  }else{
+    axios
+          .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1')
+          .then(response => {
+            const books = response.data.items
+            // append to DOM
+            console.log(response.data.items);
+            appendToDOM(books)
+            CreatePaggination(response.data.totalPages)
           })
           .catch(error => console.error(error))
   }}
 
-      const createOption = categorie => {
+      const ProductBook = categorie => {
         const option = document.createElement('div')
         option.id = "categorie"
         option.innerHTML = categorie.name
         option.addEventListener('click', function() {
-          const sort = document.querySelector('#sort')
-          sort.value = ""
-          newcategorie = categorie.name
+          const sort = document.querySelector('#sort');
+          newcategorie = categorie.name;
           const main = document.getElementById("main-product");
           main.innerHTML = '';
+          Spinner();
           axios
-              .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1&category=' + categorie.name)
+              .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=1&category=' + categorie.name + '&sort=' + sort.value)
               .then(response => {
                 const books = response.data.items
                 // append to DOM
                 console.log(response.data.items);
+                target = "Book";
+                appendToDOM(books)
+                CreatePaggination(response.data.totalPages)
+              })
+              .catch(error => console.error(error))
+                }, false);
+          return option
+      }
+
+      const ProductGame = categorie => {
+        const option = document.createElement('div')
+        option.id = "categorie"
+        option.innerHTML = categorie.name
+        option.addEventListener('click', function() {
+          const sort = document.querySelector('#sort');
+          newcategorie = categorie.name;
+          const main = document.getElementById("main-product");
+          main.innerHTML = '';
+          Spinner();
+          axios
+              .get('https://olopl.bsite.net/api/Game?pageSize=8&PageNumber=1&category=' + categorie.name + '&sort=' + sort.value)
+              .then(response => {
+                const books = response.data.items
+                // append to DOM
+                console.log(response.data.items);
+                target = "Game";
                 appendToDOM(books)
                 CreatePaggination(response.data.totalPages)
               })
@@ -156,18 +214,19 @@ const createDiv = book => {
       pag.classList.add("pag")
       pag.innerHTML = i
       pag.addEventListener('click', function() {
+        const main = document.getElementById("main-product");
+        main.innerHTML = '';
+        const sort = document.querySelector('#sort')
+        Spinner();
+        debugger
         axios
-          .get('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie)
+          .get('https://olopl.bsite.net/api/'+ target +'?pageSize=8&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie + '&sort=' + sort.value)
           .then(response => {
             const books = response.data.items
-            // append to DOM
-            console.log('https://olopl.bsite.net/api/Book?pageSize=8&PageNumber=' +  pag.innerHTML +'&category=' + newcategorie);
-            const main = document.getElementById("main-product");
             main.innerHTML = '';
             actualPage = pag.innerHTML
             appendToDOM(books)
-            const sort = document.querySelector('#sort')
-            sort.value = ""
+            debugger
           })
           .catch(error => console.error(error))
             }, false);

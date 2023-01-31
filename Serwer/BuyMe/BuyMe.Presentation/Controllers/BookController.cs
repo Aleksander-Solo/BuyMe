@@ -17,43 +17,9 @@ namespace BuyMe.Presentation.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetBooks(string? sort, int pageSize, int PageNumber, string? category)
+        public IActionResult GetBooks(string? sort, int pageSize, int PageNumber, string? category, string? phrase)
         {
-            PagedResultDto<BookDto> books = _bookService.GetBooks(pageSize, PageNumber, category);
-            if (!String.IsNullOrEmpty(sort))
-            {
-                if (sort == "priceLower")
-                {
-                    books.items = books.items.OrderBy(x => x.Price);
-                    return Ok(books);
-                }
-                else if (sort == "priceUpper")
-                {
-                    books.items = books.items.OrderBy(x => x.Price).Reverse();
-                    return Ok(books);
-                }
-                else if (sort == "alfabeth")
-                {
-                    books.items = books.items.OrderBy(x => x.Title);
-                    return Ok(books);
-                }
-                else if (sort == "alfabethReverse")
-                {
-                    books.items = books.items.OrderBy(x => x.Title).Reverse();
-                    return Ok(books);
-                }
-                else if (sort == "releaseDate")
-                {
-                    books.items = books.items.OrderBy(x => x.Releasedate).Reverse();
-                    return Ok(books);
-                }
-            }
-            else
-            {
-                return Ok(books);
-            }
-
-            return BadRequest();
+            return Ok(_bookService.GetBooks(pageSize, PageNumber, category, phrase, sort));
         }
         [HttpGet("categories")]
         public IActionResult GetBookCategorys()

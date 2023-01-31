@@ -36,9 +36,9 @@ namespace BuyMe.Application.Services
             return _mapper.Map(_repositiory.GetBook(id));
         }
 
-        public PagedResultDto<BookDto> GetBooks(int pageSize, int PageNumber, string category)
+        public PagedResultDto<BookDto> GetBooks(int pageSize, int PageNumber, string category, string phrase, string sort)
         {
-            PagedResultDto<Book> books = _repositiory.GetBooks(pageSize, PageNumber, category);
+            PagedResultDto<Book> books = _repositiory.GetBooks(pageSize, PageNumber, category, phrase, sort);
             PagedResultDto<BookDto> mappedBooks = new PagedResultDto<BookDto>(_mapper.Map(books.items), books.totalItemCount, pageSize);
             return mappedBooks;
         }

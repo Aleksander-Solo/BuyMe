@@ -1,0 +1,392 @@
+html, body
+{
+	margin: 0;
+	overflow-x: hidden;
+	animation: transitionIn 0.5s;
+	scroll-behavior: smooth;
+	font-family: 'Nunito', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.spinner{
+  width: 80px;
+  height: 80px;
+  margin-top: 150px;
+  border: 7px solid red;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.7s linear infinite;
+}
+@keyframes spinner{
+  from{}
+    to{
+      transform: rotate(360deg);
+    }
+}
+
+
+#a-white
+{
+	text-decoration: none;
+	color: black;	
+}
+
+#a-black
+{
+	text-decoration: none;
+	color: white;
+}
+
+@media only screen and (min-width: 1024px)
+{
+	.menu-box
+	{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		transition: 0.5s;
+		background-color: black;
+	}
+	.menu-box #logo
+	{
+		color: white;
+	}
+	#logo
+	{
+		width: 150px;
+		height: 50px;
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: 0.5s;
+	}
+	#search-bar
+	{
+		width: 400px;
+		height: 40px;
+		margin-left: 5px;
+		margin-right: 5px;
+		transition: 0.5s;
+	}
+	#search-form
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#search
+	{
+		width: 340px;
+		height: 40px;
+		border: none;
+		border-bottom: 1px solid white;
+		background: transparent;
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+		color: white;
+	}
+	#submit
+	{
+		margin-top: 3px;
+		margin-left: 5px;
+		width: 40px;
+		height: 40px;
+		border: 1px solid white;
+		background: none;
+		background-image: url(../web-pictures/search.png);
+		background-size: cover;
+		background-position: center;
+		
+	}
+	#submit:hover
+	{
+		cursor: pointer;
+	}
+	#client-options
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#categories-image
+	{
+		width: 150px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+    	justify-content: space-around;
+		margin-left: 10px;
+		margin-right: 10px;
+		transition: 0.5s;
+	}
+	#book, #videos, #games
+	{
+		width: 35px;
+		height: 35px;
+	}
+	#book
+	{
+		background-image: url(../web-pictures/books-white.png);
+		background-size: cover;
+		background-position: center;
+	}
+	#videos
+	{
+		background-image: url(../web-pictures/video-white.png);
+		background-size: cover;
+		background-position: center;		
+	}
+	#games
+	{
+		background-image: url(../web-pictures/game-white.png);
+		background-size: cover;
+		background-position: center;		
+	}
+	#shopping
+	{
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background-image: url(../web-pictures/shopping.png);
+		background-size: cover;
+		background-position: center;
+		transition: 0.5s;		
+	}
+	#user
+	{
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background-image: url(../user-images/user_unknow.png);
+		background-size: cover;
+		background-position: center;	
+	}
+	#section-produkty
+	{
+		width: 100%;
+		min-height: 700px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	#product-content
+	{
+		width: 90%;
+		min-height: 700px;
+		display: flex;
+	}
+	#left-bar
+	{
+		width: 20%;
+		height: 100%;
+		border-left: 2px solid black;
+	}
+	#categories-text
+	{
+		margin-top: 20px;
+		margin-bottom: 40px;
+		width: 100%;
+		text-align: center;
+		font-size: 50px;
+	}
+	.categories
+	{
+		font-size: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		transition: 0.6s;
+		cursor: pointer;
+		text-align: center;
+	}
+	.categories-of
+	{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		transition: 0.6s;
+	}
+	#categorie
+	{	
+		margin-top: 10px;
+		margin-bottom: 10px;	
+		text-align: center;	
+		font-size: 20px;
+	}
+	#categorie:hover
+	{	
+		color: crimson;
+		cursor: pointer;
+	}
+	#right-bar
+	{
+		width: 80%;
+		min-height: 700px;
+	}
+	#up-bar
+	{
+		width: 100%;
+		height: 100px;
+		border-bottom: 2px solid black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#sort
+	{
+		width: 300px;
+		height: 50px;
+		background-color: white;
+		border: 1px solid black;
+		font-family: 'Nunito', sans-serif;
+		font-size: 20px;
+	}
+	.main-product
+	{
+		width: 100%;
+		min-height: 250px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.product-box
+	{
+		width: 300px;
+		height: 400px;
+		margin: 20px;
+		transition: 0.5s;
+	}
+	.product-box:hover
+	{   
+		box-shadow: 0px 0px 48px 32px #ad2729;
+		background-color: #fbf5e0;
+		cursor: pointer;
+	}
+	.link-prod
+	{
+		color: black;
+		text-decoration: none;
+	}
+	.product-photo
+	{
+		width: 300px;
+		height: 300px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.product-photo-img
+	{
+		width: 60%;
+		height: auto;
+	}
+	.product-price
+	{
+		width: 300px;
+		height: 100px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#footer
+	{
+		width: 100%;
+		height: 300px;
+		background-color: black;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	#logo-footer
+	{
+		width: 150px;
+		height: 50px;
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#client-options-footer
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#categories-image-footer
+	{
+		height: 50px;
+		display: flex;
+		align-items: center;
+    	justify-content: space-around;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#info-box
+	{
+		font-size: 25px;
+		color: white;
+		width: 200px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	#info-text-1
+	{
+		border-bottom: 2px solid white;
+		width: 200px;
+	}
+	#info-text-2
+	{
+		width: 200px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+	#paggination{
+		width: 200px;
+		height: 50px;
+		margin-left: 30px;
+	}
+	.pag{
+		float: left;
+		display: block;
+		text-align: center;
+		padding: 10px;
+		font-size: 23px;
+		border: 1px solid black;
+		height: 100%;
+	}
+	.pag:hover{
+		border: 1px solid crimson;
+		cursor: pointer;
+	}
+	.pag-select{
+		border: 1px solid red;
+	}
+	.title{
+		text-align: center; width: 100%; font-size: 37px; padding: 10px;
+		background-color: black;
+		color:  white;
+	}
+}
+
+@keyframes transitionIn{
+  from {
+    opacity: 0.3;
+  }
+   to{
+     opacity: 1;
+   }
+}

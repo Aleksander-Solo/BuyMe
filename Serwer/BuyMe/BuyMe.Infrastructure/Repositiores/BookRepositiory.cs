@@ -50,16 +50,134 @@ namespace BuyMe.Infrastructure.Repositiores
             return book;
         }
 
-        public PagedResultDto<Book> GetBooks(int pageSize, int PageNumber, string category)
+        public PagedResultDto<Book> GetBooks(int pageSize, int PageNumber, string category, string phrase, string sort)
         {
-            IQueryable<Book> books;
+            IQueryable<Book> books = null;
             if (!String.IsNullOrEmpty(category))
             {
-                books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category);
+                if (!String.IsNullOrEmpty(phrase))
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category && x.Title.Contains(phrase)).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category && x.Title.Contains(phrase));
+                    }
+                }
+                else
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        books = _context.Books.Include(x => x.BookCategory).Where(x => x.BookCategory.Name == category);
+                    }
+                }
             }
             else
             {
-                books = _context.Books.Include(x => x.BookCategory);
+                if (!String.IsNullOrEmpty(phrase))
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).Where(x => x.Title.Contains(phrase)).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        books = _context.Books.Include(x => x.BookCategory).Where(x => x.Title.Contains(phrase));
+                    }
+                }
+                else
+                {
+                    if (!String.IsNullOrEmpty(sort))
+                    {
+                        if (sort == "priceLower")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).OrderBy(x => x.Price);
+                        }
+                        else if (sort == "priceUpper")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).OrderBy(x => x.Price).Reverse();
+                        }
+                        else if (sort == "alfabeth")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).OrderBy(x => x.Title);
+                        }
+                        else if (sort == "alfabethReverse")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).OrderBy(x => x.Title).Reverse();
+                        }
+                        else if (sort == "releaseDate")
+                        {
+                            books = _context.Books.Include(x => x.BookCategory).OrderBy(x => x.Releasedate).Reverse();
+                        }
+                    }
+                    else
+                    {
+                        books = _context.Books.Include(x => x.BookCategory);
+                    }
+                }
             }
 
 
