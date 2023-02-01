@@ -38,7 +38,7 @@ const createDiv = book => {
   const createA = book => {
     const a = document.createElement('a')
     a.classList.add('link-prod');
-    a.href = `/BuyMe/Produkty/Szczegoly/index.html?id=${book.id}&target=${target}`
+    a.href = `/Produkty/Szczegoly/index.html?id=${book.id}&target=${target}`
     a.appendChild(createDiv(book))
     return a
   }

@@ -132,11 +132,14 @@ if(urlParams.get("target") == "Book"){
           buttonDelete.setAttribute("data-bs-target", "#myModal");
           buttonDelete.style.marginLeft = "10px";
           p.appendChild(buttonDelete);
-          const buttonEdit = document.createElement('button');
+          const a = document.createElement('a');
+          a.setAttribute("href", "/Edycja/book/index.html?id=" + urlParams.get('id'));
+          p.appendChild(a);
+          const buttonEdit = document.createElement('button'); 
           buttonEdit.innerHTML = 'Edytuj produkt <i class="fa-regular fa-pen-to-square"></i>';
           buttonEdit.className = "btn btn-warning";
           buttonEdit.style.marginLeft = "10px";
-          p.appendChild(buttonEdit);
+          a.appendChild(buttonEdit);
         }
       }
 
@@ -205,6 +208,7 @@ if(urlParams.get("target") == "Book"){
               itemShop.push(book);
               localStorage.setItem("shopCard", JSON.stringify(itemShop))
             }
+            window.location.href = "https://buymetlimc.000webhostapp.com/Koszyk/index.html";
           }
         })
         .catch(error => console.error(error))
@@ -227,5 +231,5 @@ if(urlParams.get("target") == "Book"){
           }
         }).then(() => alert("Produkt usunienty!"));;
         debugger;
-        window.location.href = "D:/BuyMe/BuyMe/Client-Pir/Produkty/index.html";
+        window.location.href = "https://buymetlimc.000webhostapp.com/Produkty/index.html?target=" + urlParams.get("target");
       }

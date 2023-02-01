@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="pl">
 	<head>
-		<title>BuyMe - Logowanie</title>
+		<title>BuyMe - Administracja</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="index.css" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
+		<script src="kategorie.js"></script>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</head>
 	<body>
@@ -29,13 +30,20 @@
 				<a href="/Logowanie/index.html"><div id="user"></div></a>
 			</div>
 		</nav>
-		<section id="log-bar">
-			<form id="log-box" onsubmit="send();return false">
-				<div id="log-box-text">Zaloguj się</div>
-				<input type="text" class="log-box-input" placeholder="Wpisz login" id="email"/>
-				<input type="password" class="log-box-input" placeholder="Wpisz hasło" id="password"/>
-				<button type="submit" class="log-box-input-s">Zaloguj się</button>
-				<div id="log-box-text-2">Nie posiadasz konta? <a href="../Rejestracja/index.html">Zajerestruj się.</a></div>
+		<section id="admin-panel">
+			<form id="formularz">
+				<a href="/Administracja/index.html">Wróć</a>
+				<label for="foto">Prześlij zdjęcie</label><input type="file" id="Image" />
+				<input type="text" placeholder="Tytuł" class="input-text" id="Title" required />
+				<input type="text" placeholder="Producent" class="input-text" id="Producer" required />
+				<input type="date" class="input-text" id="Releasedate"/>
+				<input type="text" placeholder="Nośnik" class="input-text" id="Carrier"/>
+				<textarea placeholder="Opis" class="input-text" id="Description" style="height: 80px;"></textarea>
+				<input type="number" placeholder="Cena" class="input-text" id="Price" required/>
+				<select class="input-text" id="Categories" required>
+					<option value="0">Wybierz gatunek</option>
+				</select>
+				<input value="Edytuj produkt" id="submit-product" onclick="send()"/>
 			</form>
 		</section>
 		<footer id="footer">

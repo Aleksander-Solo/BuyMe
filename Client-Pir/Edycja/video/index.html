@@ -1,45 +1,55 @@
 <!DOCTYPE HTML>
 <html lang="pl">
 	<head>
-		<title>BuyMe - Logowanie</title>
+		<title>BuyMe - Administracja</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="index.css" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet" />
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="kategorie.js"></script>
 	</head>
 	<body>
 		<nav class="menu-box">
-			<a id="a-white" href="/index.html"><div id="logo">BuyMe</div></a>
+			<a id="a-white" href="/BuyMe/index.html"><div id="logo">BuyMe</div></a>
 			<div id="client-options">
 				<div id="search-bar">
-					<form id="search-form" action="/Szukaj/index.html">
+					<form id="search-form" action="/BuyMe/Produkty/index.html">
 						<input id="search" type="text" placeholder="Wpisz wyszukiwany produkt"/>
 						<input id="submit" type="submit" value="" />
 					</form>
 				</div>
 				<div id="categories-image">
-					<a href="/Produkty/index.html"><div id="book"></div></a>
-					<a href="/Produkty/index.html"><div id="games"></div></a>
-					<a href="/Produkty/index.html"><div id="videos"></div></a>
+					<a href="/BuyMe/Produkty/index.html"><div id="book"></div></a>
+					<a href="/BuyMe/Produkty/index.html"><div id="games"></div></a>
+					<a href="/BuyMe/Produkty/index.html"><div id="videos"></div></a>
 				</div>
-				<a href="/Koszyk/index.html"><div id="shopping"></div></a>
-				<a href="/Logowanie/index.html"><div id="user"></div></a>
+				<a href="/BuyMe/Koszyk/index.html"><div id="shopping"></div></a>
+				<a href="/BuyMe/Logowanie/index.html"><div id="user"></div></a>
 			</div>
 		</nav>
-		<section id="log-bar">
-			<form id="log-box" onsubmit="send();return false">
-				<div id="log-box-text">Zaloguj się</div>
-				<input type="text" class="log-box-input" placeholder="Wpisz login" id="email"/>
-				<input type="password" class="log-box-input" placeholder="Wpisz hasło" id="password"/>
-				<button type="submit" class="log-box-input-s">Zaloguj się</button>
-				<div id="log-box-text-2">Nie posiadasz konta? <a href="../Rejestracja/index.html">Zajerestruj się.</a></div>
+		<section id="admin-panel">
+			<form action="#" method="post" id="formularz">
+				<a href="/BuyMe/Administracja/index.html">Wróć</a>
+				<label for="foto">Prześlij zdjęcie</label><input type="file" id="foto" />
+				<input type="text" placeholder="Tytuł" id="input-text" />
+				<input type="text" placeholder="Reżyseria" id="input-text" />
+				<input type="number" placeholder="Czas trwania" id="input-text" />
+				<input type="date" id="input-text" />
+				<textarea placeholder="Opis" id="input-text"></textarea>
+				<input type="number" placeholder="Cena" id="input-text" />
+				<select id="input-text">
+					<option>Kategoria 1</option>
+					<option>Kategoria 2</option>
+					<option>Kategoria 3</option>
+				</select>
+				<input type="submit" value="Dodaj produkt" id="submit-product" />
+				
 			</form>
 		</section>
 		<footer id="footer">
-			<a id="a-black" href="/index.html"><div id="logo-footer">BuyMe</div></a>
+			<a id="a-black" href="/BuyMe/index.html"><div id="logo-footer">BuyMe</div></a>
 			<div id="categories-image-footer">
 				<div id="info-box">
 					<div id="info-text-1">BuyMe</div>
@@ -73,6 +83,5 @@
 				</div>
 			</div>
 		</footer>
-		<script src="index.js"></script>
 	</body>
 </html>

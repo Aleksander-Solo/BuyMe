@@ -1,3 +1,36 @@
+const urlParams = new URLSearchParams(window.location.search);
+
+axios.get('https://olopl.bsite.net/api/Book/' + urlParams.get('id'))
+        .then(response => {
+          const book = response.data
+          // append to DOM
+          if(response.status == 200){
+              appendToDOMBook(book);
+          }
+        })
+        .catch(error => console.log(error))
+
+        const appendToDOMBook = book => {
+          const title = document.querySelector('#Title');
+          title.value = book.title;
+          const author = document.querySelector('#Author');
+          author.value = book.author;
+          const publishinghosue = document.querySelector('#Publishinghosue');
+          publishinghosue.value = book.publishinghosue;
+          const releasedate = document.querySelector('#Releasedate');
+          releasedate.value = book.releasedate;
+          const numOfPag = document.querySelector('#NumOfPag');
+          numOfPag.value = book.numOfPag;
+          const description = document.querySelector('#Description');
+          description.value = book.description;
+          const price = document.querySelector('#Price');
+          price.value = book.price;
+          const bookCategoryId = document.querySelector('#Categories');
+          bookCategoryId.value = book.bookCategoryId;
+          binaryString = book.image;
+          debugger;
+        }
+
 function send(){
   let flag = true
     const image = binaryString
@@ -121,7 +154,7 @@ document.querySelector('#Image').addEventListener('change', function() {
 
 const createBook = book => {  
     axios({
-        method: 'post',
+        method: 'put',
         url: 'https://olopl.bsite.net/api/Book',
         data: book,
         headers: {
@@ -136,7 +169,7 @@ const createBook = book => {
         console.log(response.status);
         console.log(book);
         if(response.status == 201){
-          window.location.href = "https://buymetlimc.000webhostapp.com/Produkty/index.html?target=Book"
+          window.location.href = "https://buymetlimc.000webhostapp.com/Produkty/Szczegoly/index.html?id=" + urlParams.get('id') +"&target=Book"
         }
       });
   }

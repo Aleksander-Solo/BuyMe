@@ -59,7 +59,7 @@ axios.get('https://olopl.bsite.net/api/Game?pageSize=8&PageNumber=1&phrase=' + u
       const createA = book => {
         const a = document.createElement('a')
         a.classList.add('link-prod');
-        a.href = `/BuyMe/Produkty/Szczegoly/index.html?id=${book.id}&target=${target}`
+        a.href = `/Produkty/Szczegoly/index.html?id=${book.id}&target=${target}`
         a.appendChild(createDiv(book))
         return a
       }
